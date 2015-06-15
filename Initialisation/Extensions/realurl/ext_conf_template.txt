@@ -1,0 +1,14 @@
+# cat=basic/enable; type=string; label=Path to configuration file:Optional. If you placed RealURL configuration in a separate file, RealURL can include it for you. Specify a file name related to web site root directory.
+configFile = typo3conf/realurl_conf.php
+
+# cat=basic/enable; type=boolean; label=Enable automatic configuration:Enable this if you do not want to write configuration manually. It will generate configuration automatically and store it in typo3conf/. Automatically ignored if you wrote configuration yourself. See manual for more information.
+enableAutoConf = 1
+
+# cat=basic/enable; type=boolean; label=Enable devLog:Debugging-only! Required any 3rd party devLog extension
+enableDevLog = 0
+
+# cat=basic/enable; type=boolean; label=Enable strict mode:In strict mode RealURL will not do workarounds for configuration errors but will abort with the "404 Not found" error. It is recommended to enable this setting because it makes sure that the configuration is correct. Turning this mode off will force RealURL to recover from errors but will badly affect the performance if the configuration contains errors.
+#enableStrictMode = 1
+
+# cat=basic/enable; type=boolean; label=Store URL for cHash cache:Allows to store full URL in the cHash cache table for debugging purposes. Normally should be off.
+enableChashUrlDebug = 0

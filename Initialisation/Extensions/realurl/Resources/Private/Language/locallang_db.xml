@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Database labels</description>
+		<type>database</type>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pages.tx_realurl_pathsegment">Speaking URL path segment:</label>
+			<label index="pages.tx_realurl_exclude">Exclude from speaking URL:</label>
+			<label index="pages.tx_realurl_path_override">Override the whole page path</label>
+			<label index="pages.tx_realurl_nocache">Disable RealURL cache</label>
+			<label index="moduleFunction.tx_realurl_modfunc1">RealURL management</label>
+		</languageKey>
+	</data>
+</T3locallang>
