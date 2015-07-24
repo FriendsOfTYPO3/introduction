@@ -24,4 +24,4 @@ Kudos go to all contributors:
 
 * Benjamin Kott for the large part of developing this extension,
 * Sven Wolfermann for the first version of the package,
-* Ben van't Ende and Mathias Schreiber for kicking butts.
+* Ben van't Ende and Mathias Schreiber for kicking bugs.
