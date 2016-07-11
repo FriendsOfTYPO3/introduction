@@ -1,0 +1,14 @@
+{
+	"name": "typo3/cms-introduction",
+	"type": "typo3-cms-extension",
+	"description": "TYPO3 Introduction Package",
+	"homepage": "https://typo3.org",
+	"license": ["GPL-2.0+"],
+
+	"require": {
+		"typo3/cms-core": "7.6.0-8.99.99"
+	},
+	"replace": {
+		"introduction": "*"
+	}
+}
