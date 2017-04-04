@@ -10,12 +10,13 @@ It comes with a full-fletched website, delivering
 a theme based on Twitter bootstrap with simple
 options to modify the base theme.
 
-TODO: Info about the contents.
+Installation:
+-------------
 
-TODO: Info about the backend module
+Donwload and install `introduction` through extension manager in the back-end of you TYPO3 installation.
 
-TODO: Info about implementing own/custom content elements.
-
+Or add `introduction` via composer `composer require typo3/cms-introduction` to your exising 
+project and go the the extension manager in the back-end to install it.
 
 Credits
 -------
