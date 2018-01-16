@@ -71,7 +71,7 @@ areas:
 Step by step export guide:
 
 * Load the :file:`Resources/Private/ImportExportPreset.sql` into the database table :php:`tx_impexp_presets`.
-  On command line to target database "cmsintroduction":
+  Example for command line to the target database "cmsintroduction":
 
   .. code-block:: sql
 
@@ -93,7 +93,7 @@ Step by step export guide:
 * Delete directory :file:`ext:introduction/Initialisation/data.xml.files`
 
 * Move directory :file:`fileadmin/user_upload/_temp_/importexport/data.xml.files/`
-  to :file:`ext:introduction/Initialisation/data.xml`
+  to :file:`ext:introduction/Initialisation/data.xml.files`
 
 * Verify if :file:`ext:introduction/Initialisation/Files/` needs updates
 
