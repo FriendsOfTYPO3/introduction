@@ -16,8 +16,11 @@ backend of your TYPO3 installation. Find the distribution in "Get preconfigured 
 b) Alternatively, add `introduction` via composer `composer require typo3/cms-introduction`
 to your existing composer based project, go the backend extension manager and load the extension.
 
-More detailed documentation:
-----------------------------
+Detailed documentation:
+-----------------------
 
 [Introduction](Documentation/Introduction.rst)
+
 [Installation](Documentation/Installation.rst)
+
+[Maintaining ext:introduction](Documentation/Maintenance.rst)
