@@ -1,0 +1,73 @@
+
+identifier: contactForm
+label: 'Contact Form'
+type: Form
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Your message: {subject}'
+      recipientAddress: your.company@example.com
+      recipientName: 'Your Company name'
+      senderAddress: '{email}'
+      senderName: '{name}'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: 'true'
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+renderables:
+  -
+    identifier: page-1
+    label: 'Contact Form'
+    type: Page
+    renderables:
+      -
+        properties:
+          placeholder: Name
+        defaultValue: ''
+        identifier: name
+        label: Name
+        type: Text
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        properties:
+          placeholder: Subject
+        defaultValue: ''
+        identifier: subject
+        label: Subject
+        type: Text
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        properties:
+          placeholder: 'Email address'
+        defaultValue: ''
+        identifier: email
+        label: Email
+        type: Text
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress
+      -
+        properties:
+          placeholder: ''
+        defaultValue: ''
+        identifier: message
+        label: Message
+        type: Textarea
+        validators:
+          -
+            identifier: NotEmpty
+  -
+    identifier: summarypage
+    label: 'Summary page'
+    type: SummaryPage
