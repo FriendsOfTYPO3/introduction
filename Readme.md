@@ -19,4 +19,4 @@ to your existing composer based project, go the backend extension manager and lo
 More documentation:
 -------------------
 
-Introduction(Documentation/Introduction.rst)
+[Introduction](Documentation/Introduction.rst)
