@@ -46,3 +46,5 @@ a GNU/GPL CMS/Framework available from `www.typo3.org <https://typo3.org/>`_
    :titlesonly:
 
    Introduction
+   Installation
+

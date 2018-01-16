@@ -13,10 +13,13 @@ It comes with a full-fledged website, delivering a theme based on Twitter
 bootstrap with simple options to modify the base theme.
 
 
-Credits
--------
+Credits & Source
+----------------
 
-Kudos go to all contributors, and especially:
+Source code and issue tracker of the introduction extension can be found on
+`github <https://github.com/FriendsOfTYPO3/introduction>`_
+
+Kudos to all contributors, and especially:
 
 * Benjamin Kott for the large part of developing this extension
 * Sven Wolfermann for the first version of the package
