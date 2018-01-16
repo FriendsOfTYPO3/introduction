@@ -6,8 +6,8 @@
 	"license": ["GPL-2.0+"],
 
 	"require": {
-		"typo3/cms-core": "^8.7.0 || ^9.5",
-		"typo3/cms-impexp": "^8.7.0 || ^9.5",
+		"typo3/cms-core": "^9.1",
+		"typo3/cms-impexp": "^9.1",
 		"bk2k/bootstrap-package": "^9.1"
 	},
 	"replace": {
