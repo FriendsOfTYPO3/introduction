@@ -1683,11 +1683,11 @@
 							<field>pi_flexform</field>
 							<spKey>formPersistenceIdentifier</spKey>
 							<structurePath>sDEF/lDEF/settings.persistenceIdentifier/vDEF/</structurePath>
-							<matchString>1:/introduction/form/contactform.yaml</matchString>
+							<matchString>1:/introduction/form/contactform.form.yaml</matchString>
 							<subst type="array">
 								<type>string</type>
 								<tokenID>47451f5e587cfcaf5d6d8576f141491b</tokenID>
-								<tokenValue>1:/introduction/form/contactform.yaml</tokenValue>
+								<tokenValue>1:/introduction/form/contactform.form.yaml</tokenValue>
 							</subst>
 						</softref_element>
 					</softrefs>
@@ -16736,7 +16736,7 @@ plugin.bootstrap_package_contentelements.menu_thumbnail.media.width = 170</field
         &lt;sheet index=&quot;sDEF&quot;&gt;
             &lt;language index=&quot;lDEF&quot;&gt;
                 &lt;field index=&quot;settings.persistenceIdentifier&quot;&gt;
-                    &lt;value index=&quot;vDEF&quot;&gt;1:/introduction/form/contactform.yaml&lt;/value&gt;
+                    &lt;value index=&quot;vDEF&quot;&gt;1:/introduction/form/contactform.form.yaml&lt;/value&gt;
                 &lt;/field&gt;
                 &lt;field index=&quot;settings.overrideFinishers&quot;&gt;
                     &lt;value index=&quot;vDEF&quot;&gt;0&lt;/value&gt;
@@ -16825,11 +16825,11 @@ plugin.bootstrap_package_contentelements.menu_thumbnail.media.width = 170</field
 								<keys type="array">
 									<softref_key index="formPersistenceIdentifier" type="array">
 										<softref_element index="47451f5e587cfcaf5d6d8576f141491b" type="array">
-											<matchString>1:/introduction/form/contactform.yaml</matchString>
+											<matchString>1:/introduction/form/contactform.form.yaml</matchString>
 											<subst type="array">
 												<type>string</type>
 												<tokenID>47451f5e587cfcaf5d6d8576f141491b</tokenID>
-												<tokenValue>1:/introduction/form/contactform.yaml</tokenValue>
+												<tokenValue>1:/introduction/form/contactform.form.yaml</tokenValue>
 											</subst>
 										</softref_element>
 									</softref_key>
@@ -30113,10 +30113,10 @@ Mauris sodales|Erat et venenatis consectetur.</field>
 				<field index="header">Examples of Rich Text Content Elements </field>
 				<field index="header_position"></field>
 				<field index="rowDescription" type="NULL"></field>
-				<field index="bodytext">&lt;strong&gt;Continuous text:&lt;/strong&gt; text, optional in &lt;strong&gt;bold&lt;/strong&gt; or &lt;em&gt;italic&lt;/em&gt; or in a combination of&lt;em&gt;&lt;strong&gt; bold and italic&lt;/strong&gt;&lt;/em&gt;. 
+				<field index="bodytext">&lt;strong&gt;Continuous text:&lt;/strong&gt; text, optional in &lt;strong&gt;bold&lt;/strong&gt; or &lt;em&gt;italic&lt;/em&gt; or in a combination of&lt;em&gt;&lt;strong&gt; bold and italic&lt;/strong&gt;&lt;/em&gt;.
 &lt;strong&gt;Special characters can be used&lt;/strong&gt;: @ © ® ¢ ¼ ½ ¾ § ± a² m³ Ω π µ γ β α H&lt;sub&gt;2&lt;/sub&gt;O
 &lt;strong&gt;Texts in foreign languages can be mixed on one page. &lt;/strong&gt;&lt;br /&gt;The font has to be installed on the device though:
-cyrillic: Русская версия &lt;br /&gt;chinese: 中文版&lt;br /&gt;arabic: &lt;span lang=&quot;ar&quot; xml:lang=&quot;ar&quot;&gt;الْعَرَبيّة&lt;/span&gt; 
+cyrillic: Русская версия &lt;br /&gt;chinese: 中文版&lt;br /&gt;arabic: &lt;span lang=&quot;ar&quot; xml:lang=&quot;ar&quot;&gt;الْعَرَبيّة&lt;/span&gt;
 &lt;p class=&quot;text-center&quot;&gt;Centered text&lt;/p&gt;
 &lt;p class=&quot;text-right&quot;&gt;Text justified right&lt;/p&gt;</field>
 				<field index="bullets_type" type="integer">0</field>
@@ -31965,7 +31965,7 @@ Fluid is used with Extbase by default, and can be used standalone in other PHP f
 				<field index="description"></field>
 				<field index="no_search" type="integer">0</field>
 				<field index="SYS_LASTCHANGED" type="integer">0</field>
-				<field index="abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et lectus bibendum, commodo tellus ut, scelerisque massa. Phasellus risus felis, luctus id enim sed, sodales malesuada nibh. 
+				<field index="abstract">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et lectus bibendum, commodo tellus ut, scelerisque massa. Phasellus risus felis, luctus id enim sed, sodales malesuada nibh.
 
 Aliquam lobortis metus ac dolor efficitur, a sodales augue pulvinar. Ut risus ante, posuere vel orci eu, ornare porttitor lacus. Quisque auctor ut justo vel fermentum. Proin risus nulla, feugiat eu efficitur et, malesuada ac dui. Nam pharetra rutrum dui, a blandit magna accumsan vitae.</field>
 				<field index="module"></field>
@@ -41314,7 +41314,7 @@ Aliquam lobortis metus ac dolor efficitur, a sodales augue pulvinar. Ut risus an
 				<field index="title">TYPO3 - 2020</field>
 				<field index="width" type="integer">0</field>
 				<field index="height" type="integer">0</field>
-				<field index="description">Mathias Schreiber 
+				<field index="description">Mathias Schreiber
 Benni Mack</field>
 				<field index="alternative" type="NULL"></field>
 				<field index="l10n_state" type="NULL"></field>
