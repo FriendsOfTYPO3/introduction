@@ -7,8 +7,8 @@ toolbox of the TYPO3 CMS framework.
 It comes with a full-fledged website, delivering a theme based on Twitter
 bootstrap with simple options to modify the base theme.
 
-Installation:
--------------
+Installation
+------------
 
 a) Install `introduction` distribution using the extension manager in the
 backend of your TYPO3 installation. Find the distribution in "Get preconfigured distribution".
@@ -16,8 +16,8 @@ backend of your TYPO3 installation. Find the distribution in "Get preconfigured 
 b) Alternatively, add `introduction` via composer `composer require typo3/cms-introduction`
 to your existing composer based project, go the backend extension manager and load the extension.
 
-Detailed documentation:
------------------------
+Detailed documentation
+----------------------
 
 [Introduction](Documentation/Introduction.rst)
 
