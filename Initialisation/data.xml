@@ -620,7 +620,7 @@
 				<rec index="28" type="array">
 					<uid>28</uid>
 					<pid>6</pid>
-					<title>Intreractive</title>
+					<title>Interactive</title>
 					<size>1634</size>
 					<relations index="rels" type="array"></relations>
 					<softrefs type="array"></softrefs>
@@ -16871,7 +16871,7 @@ plugin.bootstrap_package_contentelements.menu_thumbnail.media.width = 170</field
 				<field index="l10n_source" type="integer">0</field>
 				<field index="l10n_diffsource"></field>
 				<field index="hidden" type="integer">0</field>
-				<field index="title">Intreractive</field>
+				<field index="title">Interactive</field>
 				<field index="doktype" type="integer">4</field>
 				<field index="TSconfig" type="NULL"></field>
 				<field index="is_siteroot" type="integer">0</field>
