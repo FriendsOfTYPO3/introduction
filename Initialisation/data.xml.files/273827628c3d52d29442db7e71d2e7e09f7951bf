@@ -1,6 +1,8 @@
 
+renderingOptions:
+  submitButtonLabel: Submit
 identifier: contactForm
-label: 'Contact Form'
+label: 'Simple Contact Form'
 type: Form
 prototypeName: standard
 finishers:
@@ -15,20 +17,23 @@ finishers:
       carbonCopyAddress: ''
       blindCarbonCopyAddress: ''
       format: html
-      attachUploads: 'true'
+      attachUploads: true
       translation:
         language: ''
     identifier: EmailToReceiver
 renderables:
   -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
     identifier: page-1
     label: 'Contact Form'
     type: Page
     renderables:
       -
+        defaultValue: ''
         properties:
           placeholder: Name
-        defaultValue: ''
         identifier: name
         label: Name
         type: Text
@@ -36,9 +41,9 @@ renderables:
           -
             identifier: NotEmpty
       -
+        defaultValue: ''
         properties:
           placeholder: Subject
-        defaultValue: ''
         identifier: subject
         label: Subject
         type: Text
@@ -46,9 +51,9 @@ renderables:
           -
             identifier: NotEmpty
       -
+        defaultValue: ''
         properties:
           placeholder: 'Email address'
-        defaultValue: ''
         identifier: email
         label: Email
         type: Text
@@ -58,9 +63,9 @@ renderables:
           -
             identifier: EmailAddress
       -
+        defaultValue: ''
         properties:
           placeholder: ''
-        defaultValue: ''
         identifier: message
         label: Message
         type: Textarea
@@ -68,6 +73,9 @@ renderables:
           -
             identifier: NotEmpty
   -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
     identifier: summarypage
     label: 'Summary page'
     type: SummaryPage
