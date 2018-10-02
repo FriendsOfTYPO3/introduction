@@ -6,9 +6,12 @@
 	"license": ["GPL-2.0-or-later"],
 
 	"require": {
-		"typo3/cms-core": "^9.1",
-		"typo3/cms-impexp": "^9.1",
-		"bk2k/bootstrap-package": "^9.1"
+		"typo3/cms-core": "^9.5",
+		"typo3/cms-impexp": "^9.5",
+		"typo3/cms-form": "^9.5",
+		"typo3/cms-indexed-search": "^9.5",
+		"typo3/cms-felogin": "^9.5",
+		"bk2k/bootstrap-package": "^9.5"
 	},
 	"replace": {
 		"introduction": "*"
