@@ -4,16 +4,20 @@
 	"description": "TYPO3 Introduction Package",
 	"homepage": "https://typo3.org",
 	"license": ["GPL-2.0-or-later"],
-
 	"require": {
-		"typo3/cms-core": "^9.5",
-		"typo3/cms-impexp": "^9.5",
-		"typo3/cms-form": "^9.5",
-		"typo3/cms-indexed-search": "^9.5",
-		"typo3/cms-felogin": "^9.5",
-		"bk2k/bootstrap-package": "^10.0"
+		"typo3/cms-core": "^10.0",
+		"typo3/cms-impexp": "^10.0",
+		"typo3/cms-form": "^10.0",
+		"typo3/cms-indexed-search": "^10.0",
+		"typo3/cms-felogin": "^10.0",
+		"bk2k/bootstrap-package": "^11.0"
 	},
 	"replace": {
 		"introduction": "*"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "introduction"
+		}
 	}
 }
