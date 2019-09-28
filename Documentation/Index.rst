@@ -30,7 +30,7 @@ TYPO3 Introduction Distribution
       TYPO3 core team
 
    :License:
-      his document is published under the Open Content License available
+      This document is published under the Open Content License available
       from `www.opencontent.org/openpub/ <http://www.opencontent.org/openpub/>`_
 
    :Rendered:
