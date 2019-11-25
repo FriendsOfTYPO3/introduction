@@ -12,9 +12,6 @@
 		"typo3/cms-felogin": "^10.0",
 		"bk2k/bootstrap-package": "~11.0.0"
 	},
-	"replace": {
-		"introduction": "*"
-	},
 	"extra": {
 		"typo3/cms": {
 			"extension-key": "introduction"
