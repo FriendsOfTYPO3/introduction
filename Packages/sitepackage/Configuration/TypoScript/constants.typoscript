@@ -1,0 +1,82 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
+
+
+############
+### PAGE ###
+############
+[tree.level === 0]
+navigation.style = default-transition
+[end]
+
+page {
+    logo {
+        file = EXT:introduction_sitepackage/Resources/Public/Images/introduction-package.svg
+        fileInverted = EXT:introduction_sitepackage/Resources/Public/Images/introduction-package-inverted.svg
+        #height = 52
+        #width = 192
+        alt = TYPO3 Introduction Package
+        linktitle = TYPO3 Introduction Package
+    }
+    favicon {
+        file = EXT:introduction_sitepackage/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:introduction_sitepackage/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:introduction_sitepackage/Resources/Private/Partials/Page/
+        templateRootPath = EXT:introduction_sitepackage/Resources/Private/Templates/Page/
+    }
+    theme {
+        navigation.type = top
+        meta.enable = 0
+        cookieconsent.position = bottom-right
+        socialmedia.channels {
+            facebook.url = https://www.facebook.com/typo3/
+            twitter.url = https://twitter.com/typo3
+            github.url = https://github.com/TYPO3/TYPO3.CMS
+            youtube.url = https://www.youtube.com/user/typo3
+        }
+    }
+    preloader {
+        backgroundColor = #03A9F4
+        logo.file = EXT:introduction_sitepackage/Resources/Public/Images/introduction-package-inverted.svg
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.bootstrap_package {
+    view {
+        layoutRootPath = EXT:introduction_sitepackage/Resources/Private/Layouts/
+        partialRootPath = EXT:introduction_sitepackage/Resources/Private/Partials/
+        templateRootPath = EXT:introduction_sitepackage/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.bootstrap_package_contentelements {
+    view {
+        layoutRootPath = EXT:introduction_sitepackage/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:introduction_sitepackage/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:introduction_sitepackage/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.bootstrap_package.settings.scss {
+    primary = #0288D1
+    secondary = #FFEB3B
+    breadcrumb-bg = #FFEB3B
+    cookieconsent-bg = #F2F2F2
+    footer-sections = (content:(background: #0288D1, color: #FFFFFF, link-color: #FFEB3B), meta:(background: #FFFFFF, color: $body-color, link-color: #0288D1))
+}

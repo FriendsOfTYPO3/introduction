@@ -1,1 +1,8 @@
-Documentation-GENERATED-temp/
+# Folders
+/.build
+/Documentation-GENERATED-temp
+
+# Files
+*.cache
+.php_cs
+composer.lock

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+## Description: Cleanup the project (deletes database, .build folder and composer.lock)
+## Usage: cleanup
+## Example: "ddev cleanup"
+
+# Delete project containers (database)
+ddev delete -Oy
+
+# Delete working directory
+rm composer.lock
+rm -rf .build

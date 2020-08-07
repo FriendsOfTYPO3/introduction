@@ -1,0 +1,3 @@
+[submodule "Packages/TYPO3-Console"]
+	path = Packages/TYPO3-Console
+	url = https://github.com/gilbertsoft/TYPO3-Console.git
