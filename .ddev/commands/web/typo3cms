@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Run TYPO3 Console inside the web container
+## Usage: typo3cms [flags] [args]
+## Example: "ddev typo3cms install:generatepackagestates" or "ddev typo3cms install:fixfolderstructure" or "ddev typo3cms"
+
+.build/bin/typo3cms $@

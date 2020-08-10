@@ -1,0 +1,17 @@
+version: '3.6'
+
+services:
+  web:
+    environment:
+      - TYPO3_CONTEXT=Development
+      # TYPO3 Console Setup support
+      - TYPO3_INSTALL_ADMIN_USER=admin
+      - TYPO3_INSTALL_ADMIN_PASSWORD=password
+      - TYPO3_INSTALL_SITE_NAME=TYPO3 Introduction Package
+      - TYPO3_INSTALL_SITE_SETUP_TYPE=no
+      - TYPO3_INSTALL_WEB_SERVER_CONFIG=apache
+      # TYPO3 Testing Framework support
+      - typo3DatabaseHost=db
+      - typo3DatabaseName=t3func
+      - typo3DatabasePassword=root
+      - typo3DatabaseUsername=root

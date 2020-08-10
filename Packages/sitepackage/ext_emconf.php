@@ -14,9 +14,9 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'The official TYPO3 Introduction Package',
-    'description' => 'This package delivers a new website (page tree) and shows all out-of-the-box features of TYPO3, and includes a theme based on Twitter Bootstrap 4, and a style editor to customize the design. Sample backend groups are added',
-    'category' => 'distribution',
+    'title' => 'The official TYPO3 Introduction Sitepackage',
+    'description' => 'TYPO3 Introduction Sitepackage',
+    'category' => 'templates',
     'version' => '5.0.0',
     'state' => 'stable',
     'clearCacheOnLoad' => 1,
@@ -26,10 +26,11 @@ $EM_CONF[$_EXTKEY] = [
     'constraints' => [
         'depends' => [
             'typo3' => '9.5.0-10.4.99',
-            'impexp' => '9.5.0-10.4.99',
-            'introduction_sitepackage' => '5.0.0-5.9.99',
+            'bootstrap_package' => '11.0.0-11.9.99',
         ],
         'conflicts' => [],
-        'suggests' => [],
-    ]
+        'suggests' => [
+            'introduction' => '5.0.0-5.9.99',
+        ],
+    ],
 ];

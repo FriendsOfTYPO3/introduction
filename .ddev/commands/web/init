@@ -1,0 +1,41 @@
+#!/bin/bash
+
+## Description: Initialize the project for development
+## Usage: init
+## Example: "ddev init"
+
+# Load statements into $SQL
+#read -r -d '' SQL <<EOF
+#SET FOREIGN_KEY_CHECKS = 0;
+#SET GROUP_CONCAT_MAX_LEN=32768;
+#SET @tables = NULL;
+#SELECT GROUP_CONCAT('`', TABLE_NAME, '`') INTO @tables
+#  FROM information_schema.TABLES
+#  WHERE TABLE_SCHEMA = (SELECT DATABASE());
+#SELECT IFNULL(@tables,'dummy') INTO @tables;
+
+#SET @tables = CONCAT('TRUNCATE TABLE IF EXISTS ', @tables);
+#PREPARE stmt FROM @tables;
+#EXECUTE stmt;
+#DEALLOCATE PREPARE stmt;
+#SET FOREIGN_KEY_CHECKS = 1;
+#EOF
+
+#mysql -Nse 'show tables' DATABASE_NAME | while read table; do mysql -e "truncate table $table" DATABASE_NAME; done
+
+# Truncate all database tables
+mysql --user=db --password=db -Nse 'show tables' db | while read table; do echo "drop table $table;"; done | mysql --user=db --password=db db
+#echo $SQL | mysql --user=db --password=db --database=db
+
+# Delete working directory, preserve DDEV settings
+mv .build/public/typo3conf/AdditionalConfiguration.php ./AdditionalConfiguration.php
+rm composer.lock > /dev/null 2>&1
+rm -rf .build > /dev/null 2>&1
+mkdir -p .build/public/typo3conf
+mv ./AdditionalConfiguration.php .build/public/typo3conf/AdditionalConfiguration.php
+
+# Import factory data
+composer install --no-suggest --no-interaction
+
+# Add Import / Export preset
+mysql --user=db --password=db --database=db < Resources/Private/ImportExportPreset.sql

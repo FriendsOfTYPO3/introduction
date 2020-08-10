@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Description: Run TYPO3 CLI inside the web container
+## Usage: typo3 [flags] [args]
+## Example: "ddev typo3 list" or "ddev typo3 upgrade:run"
+
+.build/bin/typo3 $@

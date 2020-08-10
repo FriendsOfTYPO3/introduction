@@ -1,0 +1,45 @@
+{
+	"name": "typo3/cms-introduction-sitepackage",
+	"description": "TYPO3 Introduction Sitepackage - ",
+	"type": "typo3-cms-extension",
+	"homepage": "https://typo3.org",
+	"license": ["GPL-2.0-or-later"],
+	"keywords": [
+		"TYPO3 CMS",
+		"Introduction",
+		"Sitepackage"
+	],
+	"require": {
+		"bk2k/bootstrap-package": "^11.0.3 || 11.*.*@dev",
+		"typo3/cms-backend": "^9.5 || ^10.4",
+		"typo3/cms-beuser": "^9.5 || ^10.4",
+		"typo3/cms-core": "^9.5 || ^10.4",
+		"typo3/cms-felogin": "^9.5 || ^10.4",
+		"typo3/cms-filelist": "^9.5 || ^10.4",
+		"typo3/cms-filemetadata": "^9.5 || ^10.4",
+		"typo3/cms-form": "^9.5 || ^10.4",
+		"typo3/cms-frontend": "^9.5 || ^10.4",
+		"typo3/cms-indexed-search": "^9.5 || ^10.4",
+		"typo3/cms-introduction-sitepackage": "^5.0 || 5.*@dev",
+		"typo3/cms-tstemplate": "^9.5 || ^10.4",
+		"typo3/minimal": "^9.5 || ^10.4"
+	},
+	"suggest": {
+		"typo3/cms-introduction": "The official TYPO3 Introduction Package delivers a new website (page tree) and shows all out-of-the-box features of TYPO3, and includes a theme based on Twitter Bootstrap 4, and a style editor to customize the design. Sample backend groups are added"
+	},
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\CMS\\Introduction\\Sitepackage\\": "Classes/"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "5.0.x-dev"
+		},
+		"typo3/cms": {
+			"extension-key": "introduction_sitepackage",
+			"app-dir": ".build",
+			"web-dir": ".build/public"
+		}
+	}
+}

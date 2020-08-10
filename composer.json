@@ -1,20 +1,87 @@
 {
 	"name": "typo3/cms-introduction",
+	"description": "TYPO3 Introduction Package - delivers a new website (page tree) and shows all out-of-the-box features of TYPO3, and includes a theme based on Twitter Bootstrap 4, and a style editor to customize the design. Sample backend groups are added",
 	"type": "typo3-cms-extension",
-	"description": "TYPO3 Introduction Package",
+	"keywords": [""],
 	"homepage": "https://typo3.org",
-	"license": ["GPL-2.0-or-later"],
+	"license": "GPL-2.0-or-later",
+	"support": {
+		"issues": "https://github.com/FriendsOfTYPO3/introduction/issues",
+		"source": "https://github.com/FriendsOfTYPO3/introduction",
+		"docs": "https://docs.typo3.org/p/typo3/cms-introduction/master/en-us/"
+	},
 	"require": {
-		"typo3/cms-core": "^10.0",
-		"typo3/cms-impexp": "^10.0",
-		"typo3/cms-form": "^10.0",
-		"typo3/cms-indexed-search": "^10.0",
-		"typo3/cms-felogin": "^10.0",
-		"bk2k/bootstrap-package": "~11.0.0"
+		"typo3/cms-core": "^9.5 || ^10.4",
+		"typo3/cms-impexp": "^9.5 || ^10.4",
+		"typo3/cms-introduction-sitepackage": "^5.0 || 5.*@dev"
+	},
+	"require-dev": {
+		"bk2k/extension-helper": "^1.0",
+		"friendsofphp/php-cs-fixer": "^2.16",
+		"helhum/typo3-console": "dev-importSiteConfiguration as 6.3.3",
+		"overtrue/phplint": "^2.0",
+		"typo3-console/composer-auto-commands": "^0.4.2",
+		"typo3-console/composer-typo3-auto-install": "^0.4.1",
+		"typo3/cms-fluid-styled-content": "^9.5 || ^10.4",
+		"typo3/cms-lowlevel": "^9.5 || ^10.4",
+		"typo3/testing-framework": "^4.14 || ^6.3"
+	},
+	"repositories": {
+		"local": {
+			"type": "path",
+			"url": "Packages/*",
+			"options": {
+				"symlink": false
+			}
+		}
+	},
+	"config": {
+		"platform": {
+			"php": "7.2"
+		},
+		"vendor-dir": ".build/vendor",
+		"bin-dir": ".build/bin",
+		"optimize-autoloader": true,
+		"sort-packages": true
+	},
+	"scripts": {
+		"test:php:cgl": [
+			"php-cs-fixer --diff -v fix"
+		],
+		"test:php:lint": [
+			"phplint"
+		],
+		"test:php:unit": [
+			"phpunit -c Build/phpunit-unit.xml"
+		],
+		"test:php:functional": [
+			"phpunit -c Build/phpunit-functional.xml"
+		],
+		"test": [
+			"@test:php:cgl",
+			"@test:php:lint",
+			"@test:php:unit",
+			"@test:php:functional"
+		],
+		"set-version": [
+			"extension-helper version:set"
+		],
+		"changelog": [
+			"extension-helper changelog:create"
+		],
+		"pre-autoload-dump": [
+			"mkdir -p .build/public/typo3conf/ext/",
+			"[ -L .build/public/typo3conf/ext/introduction ] || ln -snvf ../../../../. .build/public/typo3conf/ext/introduction"
+		]
 	},
 	"extra": {
+		"branch-alias": {
+			"dev-master": "5.0.x-dev"
+		},
 		"typo3/cms": {
-			"extension-key": "introduction"
+			"extension-key": "introduction",
+			"app-dir": ".build",
+			"web-dir": ".build/public"
 		}
 	}
 }

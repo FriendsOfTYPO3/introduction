@@ -1,0 +1,6 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          100: EXT:introduction_sitepackage/Resources/Private/Forms/
