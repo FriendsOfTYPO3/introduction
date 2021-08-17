@@ -5,12 +5,12 @@
 	"homepage": "https://typo3.org",
 	"license": ["GPL-2.0-or-later"],
 	"require": {
-		"typo3/cms-core": "^10.0",
-		"typo3/cms-impexp": "^10.0",
-		"typo3/cms-form": "^10.0",
-		"typo3/cms-indexed-search": "^10.0",
-		"typo3/cms-felogin": "^10.0",
-		"bk2k/bootstrap-package": "~11.0.0"
+		"typo3/cms-core": "^11.3",
+		"typo3/cms-impexp": "^11.3",
+		"typo3/cms-form": "^11.3",
+		"typo3/cms-indexed-search": "^11.3",
+		"typo3/cms-felogin": "^11.3",
+		"bk2k/bootstrap-package": "~12.0.0"
 	},
 	"extra": {
 		"typo3/cms": {
