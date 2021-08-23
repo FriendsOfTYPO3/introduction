@@ -10,7 +10,7 @@
 	"homepage": "https://typo3.org",
 	"license": "GPL-2.0-or-later",
 	"require": {
-		"bk2k/bootstrap-package": "~11.0.0",
+		"bk2k/bootstrap-package": "~11.0.3",
 		"typo3/cms-core": "^10.0",
 		"typo3/cms-felogin": "^10.0",
 		"typo3/cms-form": "^10.0",
