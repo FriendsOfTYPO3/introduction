@@ -37,6 +37,10 @@
 		}
 	},
 	"scripts": {
+		"pre-autoload-dump": [
+			"mkdir -p .build/public/typo3conf/ext/",
+			"test -L .build/public/typo3conf/ext/introduction || ln -snvf ../../../../. .build/public/typo3conf/ext/introduction"
+		],
 		"post-autoload-dump": [
 			"test -f .build/public/typo3conf/LocalConfiguration.php || typo3cms install:setup"
 		]
