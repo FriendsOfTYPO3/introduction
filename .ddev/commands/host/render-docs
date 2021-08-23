@@ -1,0 +1,9 @@
+#!/bin/bash
+
+## Description: Renders the documentation with the official Docker container.
+## Usage: render-docs
+## Example: "ddev render-docs"
+
+Build/render-docs.sh || exit 1
+
+echo "or https://docs.${DDEV_PROJECT}.${DDEV_TLD}"
