@@ -12,11 +12,17 @@ CHOICE=""
 
 # Functions
 reset_project () {
+    # Workaround because the t3docs/render-documentation container creates the
+    # files with root and not the current user.
+    if [ -d .build/docs ]; then
+        sudo rm -rf .build/docs
+    fi
+
     rm -rf .build
     rm -r composer.lock
     ddev delete -Oy
 
-    echo "Project is resetted and ready to be restarted!"
+    echo "Project is reset and ready to be restarted!"
 }
 
 
@@ -34,6 +40,7 @@ while :; do
             printf "WARNING: Unknown option (ignored): %s\n" "$1" >&2
             ;;
         *)  # Default case: end of arguments.
+            break
             ;;
     esac
 
@@ -48,4 +55,6 @@ fi
 
 if [ "${CHOICE}" = "yes" ] || [ "${FORCE}" = "true" ] ; then
     reset_project
+else
+    echo "Project reset aborted."
 fi
