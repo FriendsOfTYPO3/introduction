@@ -11578,7 +11578,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -11710,7 +11710,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -13888,7 +13888,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -34416,7 +34416,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -34578,7 +34578,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -34744,7 +34744,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -34914,7 +34914,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -45835,7 +45835,7 @@ lib.dynamicContentSlide {
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -45983,7 +45983,7 @@ lib.dynamicContentSlide {
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -46129,7 +46129,7 @@ lib.dynamicContentSlide {
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -46278,7 +46278,7 @@ lib.dynamicContentSlide {
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -47817,7 +47817,7 @@ lib.dynamicContentSlide {
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -48237,7 +48237,7 @@ lib.dynamicContentSlide {
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -49038,7 +49038,7 @@ Aliquam lobortis metus ac dolor efficitur, a sodales augue pulvinar. Ut risus an
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
@@ -49623,7 +49623,7 @@ Aliquam lobortis metus ac dolor efficitur, a sodales augue pulvinar. Ut risus an
 				<field index="icon_file" type="integer">0</field>
 				<field index="icon_position"></field>
 				<field index="icon_size">default</field>
-				<field index="icon_type">0</field>
+				<field index="icon_type">default</field>
 				<field index="icon_color">#FFFFFF</field>
 				<field index="icon_background">#333333</field>
 				<field index="external_media_source"></field>
