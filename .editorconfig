@@ -54,3 +54,8 @@ indent_size = 2
 # .htaccess
 [{_.htaccess,.htaccess}]
 indent_style = tab
+
+# Export data
+[Initialisation/*.xml]
+insert_final_newline = false
+trim_trailing_whitespace = false
