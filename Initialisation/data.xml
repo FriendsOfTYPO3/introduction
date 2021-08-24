@@ -24487,7 +24487,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="t3ver_count" type="integer">0</field>
 				<field index="t3ver_tstamp" type="integer">0</field>
 				<field index="t3ver_move_id" type="integer">0</field>
-				<field index="CType">login</field>
+				<field index="CType">felogin_login</field>
 				<field index="header"></field>
 				<field index="header_position"></field>
 				<field index="bodytext" type="NULL"></field>
