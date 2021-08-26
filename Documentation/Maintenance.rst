@@ -102,13 +102,6 @@ areas:
 
 Step by step export guide:
 
-* Load the :file:`Resources/Private/ImportExportPreset.sql` into the database table :php:`tx_impexp_presets`.
-  Example for command line to the target database "cmsintroduction":
-
-  .. code-block:: sql
-
-    mysql cmsintroduction < Resources/Private/ImportExportPreset.sql
-
 * After content administration is done, select "More -> Export" on the root page "Congratulations"
 
 * Load the "Introduction Package" preset
@@ -116,7 +109,7 @@ Step by step export guide:
 * Check the exported data does NOT contain backend users, especially not the user you are currently
   logged in with
 
-* Update the preset if it had to be changed. Dump the table and update file :file:`Resources/Private/ImportExportPreset.sql`
+* Update the preset if it had to be changed.
 
 * Perform the export
 
