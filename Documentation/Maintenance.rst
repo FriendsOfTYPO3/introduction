@@ -25,6 +25,38 @@ site setup. Dealing with :php:`ext:introduction` thus means dealing only with
 the content - pages, tt_content, assets and so on.
 
 
+Local development with DDEV
+---------------------------
+
+A DDEV Local configuration is included with this repository to simplify the
+local development. A TYPO3 instance will be setup automatically while
+starting the project by running `ddev start`. To login to the Backend or
+Install Tool afterwards use the following credentials:
+
+*   User: admin
+*   Password: password
+
+
+Reset the project
+~~~~~~~~~~~~~~~~~
+
+.. warning::
+
+    This permanently removes all local changes and cannot be undone.
+
+To reset the project to a clean state run `ddev reset` which will remove the
+database and the previously installed TYPO3 instance. All other files in the
+repository will stay untouched.
+
+
+Render the documentation
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+After changes to the documentation it can be rendered locally by running
+`ddev render-docs` and will be available through the browser at
+`https://docs.introduction.typo3.ddev.local <https://docs.introduction.typo3.ddev.local>`__.
+
+
 Content administration
 ----------------------
 

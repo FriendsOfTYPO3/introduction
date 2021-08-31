@@ -1,0 +1,60 @@
+#!/bin/bash
+
+## Description: Reset the project (all changes will be lost)
+## Usage: reset [flags]
+## Example: ddev reset\nddev reset --force
+## Flags: [{"Name":"force","Shorthand":"f","Usage":"Do not ask any interactive question"}]
+
+# Initialize local variables
+FORCE=""
+CHOICE=""
+
+
+# Functions
+reset_project () {
+    # Workaround because the t3docs/render-documentation container creates the
+    # files with root and not the current user.
+    if [ -d .build/docs ]; then
+        sudo rm -rf .build/docs
+    fi
+
+    rm -rf .build
+    rm -r composer.lock
+    ddev delete -Oy
+
+    echo "Project is reset and ready to be restarted!"
+}
+
+
+# Parse options and arguments
+while :; do
+    case ${1:-} in
+        -f|--force)
+            FORCE=true
+            ;;
+        --) # End of all options.
+            shift
+            break
+            ;;
+        -?*)
+            printf "WARNING: Unknown option (ignored): %s\n" "$1" >&2
+            ;;
+        *)  # Default case: end of arguments.
+            break
+            ;;
+    esac
+
+    shift
+done
+
+# Set user confirmation if force option not set
+if [ ! "${FORCE}" = "true" ] ; then
+    printf "Warning, this will reset the project and remove all changes. Continue [yes/no]? "
+    read -r CHOICE
+fi
+
+if [ "${CHOICE}" = "yes" ] || [ "${FORCE}" = "true" ] ; then
+    reset_project
+else
+    echo "Project reset aborted."
+fi

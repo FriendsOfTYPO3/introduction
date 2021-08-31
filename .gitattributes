@@ -1,0 +1,22 @@
+# Folders
+/.ddev export-ignore
+/.github export-ignore
+/.vscode export-ignore
+/Build export-ignore
+
+# Files
+.editorconfig export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+
+# Enforce checkout with linux lf consistent over all plattforms
+*.cfg text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.php text eol=lf
+*.rst text eol=lf
+*.sql text eol=lf
+*.svg text eol=lf
+*.txt text eol=lf
+*.xml text eol=lf
+*.yaml text eol=lf
