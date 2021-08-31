@@ -15,7 +15,9 @@
 		"typo3/cms-felogin": "^10.0",
 		"typo3/cms-form": "^10.0",
 		"typo3/cms-impexp": "^10.0",
-		"typo3/cms-indexed-search": "^10.0"
+		"typo3/cms-indexed-search": "^10.0",
+		"typo3/cms-lowlevel": "^10.0",
+		"typo3/cms-tstemplate": "^10.0"
 	},
 	"require-dev": {
 		"typo3-console/composer-auto-commands": "*",
