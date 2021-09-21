@@ -2,19 +2,52 @@
 	"name": "typo3/cms-introduction",
 	"type": "typo3-cms-extension",
 	"description": "TYPO3 Introduction Package",
+	"keywords": [
+		"TYPO3 CMS",
+		"introduction",
+		"bootstrap"
+	],
 	"homepage": "https://typo3.org",
-	"license": ["GPL-2.0-or-later"],
+	"license": "GPL-2.0-or-later",
 	"require": {
+		"bk2k/bootstrap-package": "~11.0.0",
 		"typo3/cms-core": "^10.0",
-		"typo3/cms-impexp": "^10.0",
-		"typo3/cms-form": "^10.0",
-		"typo3/cms-indexed-search": "^10.0",
 		"typo3/cms-felogin": "^10.0",
-		"bk2k/bootstrap-package": "~11.0.0"
+		"typo3/cms-form": "^10.0",
+		"typo3/cms-impexp": "^10.0",
+		"typo3/cms-indexed-search": "^10.0"
+	},
+	"require-dev": {
+		"typo3-console/composer-auto-commands": "*",
+		"typo3/minimal": "^10.0"
+	},
+	"config": {
+		"bin-dir": ".build/bin",
+		"sort-packages": true,
+		"vendor-dir": ".build/vendor"
 	},
 	"extra": {
+		"branch-alias": {
+			"dev-master": "4.2.x-dev"
+		},
 		"typo3/cms": {
-			"extension-key": "introduction"
+			"app-dir": ".build",
+			"extension-key": "introduction",
+			"web-dir": ".build/public"
 		}
+	},
+	"scripts": {
+		"pre-autoload-dump": [
+			"mkdir -p .build/public/typo3conf/ext/",
+			"test -L .build/public/typo3conf/ext/introduction || ln -snvf ../../../../. .build/public/typo3conf/ext/introduction"
+		],
+		"post-autoload-dump": [
+			"test -f .build/public/typo3conf/LocalConfiguration.php || typo3cms install:setup"
+		]
+	},
+	"support": {
+		"issues": "https://github.com/FriendsOfTYPO3/introduction/issues",
+		"source": "https://github.com/FriendsOfTYPO3/introduction",
+		"docs": "https://docs.typo3.org/p/typo3/cms-introduction/master/en-us/"
 	}
 }
