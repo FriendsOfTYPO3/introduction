@@ -2,5 +2,7 @@ TYPO3:
   CMS:
     Form:
       persistenceManager:
+        allowedExtensionPaths:
+          100: EXT:introduction/Resources/Private/Forms/
         allowedFileMounts:
           100: 1:/introduction/form/
