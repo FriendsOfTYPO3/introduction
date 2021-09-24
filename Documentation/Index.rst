@@ -2,9 +2,9 @@
 
 .. _start:
 
-===============================
-TYPO3 Introduction Distribution
-===============================
+=======================================
+The Official TYPO3 Introduction Package
+=======================================
 
 .. only:: html
 
@@ -18,7 +18,7 @@ TYPO3 Introduction Distribution
       en
 
    :Description:
-      Official TYPO3 introduction distribution creates a show-off website with content
+      The Official TYPO3 Introduction Package creates a show-off website with content
 
    :Keywords:
       distribution, official, bootstrap, introduction
