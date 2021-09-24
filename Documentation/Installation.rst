@@ -10,11 +10,10 @@ If you downloaded and unpacked a full TYPO3 core from `typo3.org <https://typo3.
 or `get.typo3.org <https://get.typo3.org>`_, just :ref:`install the system <t3install:start>` as usual.
 In the last installation step you can select the option *Yes, download the list of distributions.* On
 first backend login, you will be redirected to the extension manager "Get preconfigured
-distribution" and can install the "Official introduction package" with one click.
+distribution" and can install the "The Official TYPO3 Introduction Package" with one click.
 
 If you want to test the distribution in an existing instance, just select the extension
-manager in the backend, go to "Get preconfigured distribution" and select the introduction
-distribution.
+manager in the backend, go to "Get preconfigured distribution" and select "The Official TYPO3 Introduction Package".
 
 Note the extension can be unloaded and removed from the system after initial import,
 all business code is within the bootstrap_package extension that comes along with the
