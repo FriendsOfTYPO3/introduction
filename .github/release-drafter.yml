@@ -1,0 +1,36 @@
+name-template: 'TYPO3 Introduction Package $RESOLVED_VERSION'
+tag-template: '$RESOLVED_VERSION'
+categories:
+  - title: '🚀 Features'
+    label: 'enhancement'
+  - title: '🐛 Bug Fixes'
+    label: 'bug'
+  - title: '🧰 Maintenance'
+    label: 'maintenance'
+  - title: '📖 Documentation'
+    label: 'documentation'
+  - title: '🔓 Security'
+    label: 'security'
+  - title: '⚠ Breaking'
+    label: 'breaking'
+change-template: '- $TITLE (#$NUMBER) by @$AUTHOR'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+version-resolver:
+  major:
+    labels:
+      - 'breaking'
+  minor:
+    labels:
+      - 'enhancement'
+  patch:
+    labels:
+      - 'bug'
+      - 'documentation'
+      - 'maintenance'
+      - 'security'
+  default: patch
+template: |
+  ## Changes since $PREVIOUS_TAG
+
+  $CHANGES
+filter-by-commitish: true

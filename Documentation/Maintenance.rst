@@ -132,17 +132,45 @@ Step by step export guide:
 Release
 -------
 
-* Adapt TYPO3 core & other dependencies if needed in :file:`ext_emconf.php` and :file:`composer.json`.
-  Push changes.
 
-* Align on a new version (major, minor, patch level). Adapt version number in :file:`ext_emconf.php` and
-  :file:`Documentation/Settings.cfg`. Push changes with "[TASK] Bump version x.y.z"
+Prerequisites
+~~~~~~~~~~~~~
 
-* Tag new version, git push --tags - this will update packagist.org with the new release
+Tailor requires an API access token to get the job done. The token must be
+provided as GitHub secret `TYPO3_API_ACCESS_TOKEN` before creating a new
+release. See [Actions secrets](https://github.com/FriendsOfTYPO3/introduction/settings/secrets/actions)
+to manage the secrets.
 
-* Upload extension to TER, extension owner is user "typo3v4"
+The extension owner is the user "typo3v4".
 
-* Wait until TER processed upload and test distribution installation using extension manager
-  "Get preconfigured distribution"
+TODO: the automatic token refresh is planed. Currently the token expires
+after a maximum of 12 months. When in doubt please update the token before
+creating a new release.
 
-* Quickly do another release because something was wrong, or party hard if all is good
+
+Create a Release
+~~~~~~~~~~~~~~~~
+
+* Adapt TYPO3 core & other dependencies if needed in :file:`ext_emconf.php` and
+  :file:`composer.json`. Push changes.
+
+* The version number in :file:`ext_emconf.php` is managed by the release script,
+  you don't have to touch it anymore!
+
+* On GitHub head to [Actions -> Create Release](https://github.com/FriendsOfTYPO3/introduction/actions/workflows/release.yml)
+  where you can find a button `Run workflow` with a dropdown menu. Choose the
+  desired branch to create a release and run the workflow. As long as you don't
+  fill the `Mode` field with `publish` no changes are written to the repository
+  and you are able to check the drafted release before doing the final release
+  including the deployment to TER.
+
+
+Fix failed TER upload
+~~~~~~~~~~~~~~~~~~~~~
+
+In case the upload to TER failed in the release workflow please do a manual
+upload. The easiest way is to download the artefact from the GitHub release,
+repack it and upload the new artefact (the containing folder must be removed
+and the file name needs to be fixed according the specifications).
+
+TODO: create a manual workflow to repeat the upload to TER.
