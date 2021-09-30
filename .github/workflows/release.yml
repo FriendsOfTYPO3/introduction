@@ -1,0 +1,80 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Release Mode, possible values are "draft" or "publish"'
+        required: true
+        default: 'draft'
+
+env:
+  TYPO3_EXTENSION_KEY: introduction
+
+jobs:
+  create_release:
+    name: Create new release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Calculate release version
+        id: version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: release-drafter/release-drafter@v5
+        with:
+          commitish: ${{ github.ref }}
+          disable-autolabeler: true
+
+      - name: Print calculated version
+        env:
+          VERSION_OUTPUTS: ${{ toJSON(steps.version.outputs) }}
+        run: |
+          echo "$VERSION_OUTPUTS"
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+          extensions: intl, mbstring, json, zip, curl
+          tools: composer:v2
+
+      - name: Install Tailor
+        run: composer global require typo3/tailor --prefer-dist --no-progress --no-suggest
+
+      - name: Set version
+        run: composer global exec -- tailor set-version --no-docs -- ${{ steps.version.outputs.tag_name }}
+
+      - name: Add release commit
+        run: |
+          test "${{ github.event.inputs.mode }}" == "publish" && PUSH_OPTIONS="" || PUSH_OPTIONS=--dry-run
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "[RELEASE] ${{ steps.version.outputs.name }}"
+          git push $PUSH_OPTIONS
+
+      - name: Create release
+        id: release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: release-drafter/release-drafter@v5
+        with:
+          publish: ${{ github.event.inputs.mode == 'publish' }}
+          commitish: ${{ github.ref }}
+          disable-autolabeler: true
+
+      - name: Publish to TER
+        env:
+          GITHUB_ARTEFACT: ${{ github.server_url }}/${{ github.repository }}/archive/refs/tags/${{ steps.release.outputs.tag_name }}.zip
+          TYPO3_API_TOKEN: ${{ secrets.TYPO3_API_ACCESS_TOKEN }}
+        run: |
+          test -n "$TYPO3_API_TOKEN" && TOKEN_STATUS=Found || TOKEN_STATUS=Missing
+          echo "Artefact:      $GITHUB_ARTEFACT"
+          echo "Extension Key: $TYPO3_EXTENSION_KEY"
+          echo "API Token:     $TOKEN_STATUS"
+          test -z "$TYPO3_API_TOKEN" && echo "Secret \"TYPO3_API_ACCESS_TOKEN\" is missing, aborting." && exit 1
+          test "${{ github.event.inputs.mode }}" != "publish" && echo "Publishing to TER skipped." && exit 0
+          test "${{ github.event.inputs.mode }}" == "publish" && composer global exec -- tailor ter:publish --artefact "$GITHUB_ARTEFACT" --comment "${{ steps.release.outputs.body }}" -- ${{ steps.release.outputs.tag_name }}
