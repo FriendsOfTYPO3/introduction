@@ -31,12 +31,11 @@ jobs:
 
       - name: Get release
         id: release
-        uses: cardinalby/git-get-release-action@v1
-        with:
-          tag_name: ${{ github.event.inputs.tag }}
-          debug: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: cardinalby/git-get-release-action@v1
+        with:
+          tag: ${{ github.event.inputs.tag }}
 
       - name: Publish to TER
         env:
