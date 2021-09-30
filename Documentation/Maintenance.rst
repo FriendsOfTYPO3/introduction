@@ -168,9 +168,6 @@ Create a Release
 Fix failed TER upload
 ~~~~~~~~~~~~~~~~~~~~~
 
-In case the upload to TER failed in the release workflow please do a manual
-upload. The easiest way is to download the artefact from the GitHub release,
-repack it and upload the new artefact (the containing folder must be removed
-and the file name needs to be fixed according the specifications).
-
-TODO: create a manual workflow to repeat the upload to TER.
+In case the upload to TER failed in the release workflow head to [Actions -> Publish Release](https://github.com/FriendsOfTYPO3/introduction/actions/workflows/publish.yml)
+and start the workflow by providing a previously created tag. The `Mode` works
+in the same way like for creating a release.
