@@ -19,9 +19,6 @@ jobs:
     name: Publish release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -30,11 +27,11 @@ jobs:
           tools: composer:v2
 
       - name: Install Tailor
-        run: composer global require typo3/tailor --prefer-dist --no-progress --no-suggest
+        run: composer global require typo3/tailor --prefer-dist --no-progress
 
       - name: Get release
         id: release
-        uses: joutvhu/get-release@v1
+        uses: cardinalby/git-get-release-action@v1
         with:
           tag_name: ${{ github.event.inputs.tag }}
           debug: true

@@ -42,7 +42,7 @@ jobs:
           tools: composer:v2
 
       - name: Install Tailor
-        run: composer global require typo3/tailor --prefer-dist --no-progress --no-suggest
+        run: composer global require typo3/tailor --prefer-dist --no-progress
 
       - name: Set version
         run: composer global exec -- tailor set-version --no-docs -- ${{ steps.version.outputs.tag_name }}
