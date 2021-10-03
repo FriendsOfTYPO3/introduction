@@ -138,7 +138,7 @@ Prerequisites
 
 Tailor requires an API access token to get the job done. The token must be
 provided as GitHub secret `TYPO3_API_ACCESS_TOKEN` before creating a new
-release. See [Actions secrets](https://github.com/FriendsOfTYPO3/introduction/settings/secrets/actions)
+release. See `Actions secrets <https://github.com/FriendsOfTYPO3/introduction/settings/secrets/actions>`__
 to manage the secrets.
 
 The extension owner is the user "typo3v4".
@@ -157,7 +157,7 @@ Create a Release
 * The version number in :file:`ext_emconf.php` is managed by the release script,
   you don't have to touch it anymore!
 
-* On GitHub head to [Actions -> Create Release](https://github.com/FriendsOfTYPO3/introduction/actions/workflows/release.yml)
+* On GitHub head to `Actions -> Create Release <https://github.com/FriendsOfTYPO3/introduction/actions/workflows/release.yml>`__
   where you can find a button `Run workflow` with a dropdown menu. Choose the
   desired branch to create a release and run the workflow. As long as you don't
   fill the `Mode` field with `publish` no changes are written to the repository
@@ -168,6 +168,6 @@ Create a Release
 Fix failed TER upload
 ~~~~~~~~~~~~~~~~~~~~~
 
-In case the upload to TER failed in the release workflow head to [Actions -> Publish Release](https://github.com/FriendsOfTYPO3/introduction/actions/workflows/publish.yml)
+In case the upload to TER failed in the release workflow head to `Actions -> Publish Release <https://github.com/FriendsOfTYPO3/introduction/actions/workflows/publish.yml>`__
 and start the workflow by providing a previously created tag. The `Mode` works
 in the same way like for creating a release.
