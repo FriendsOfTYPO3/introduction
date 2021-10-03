@@ -11,7 +11,7 @@
             "hostname": "0.0.0.0",
             "port": 9000,
             "pathMappings": {
-                "/var/www/html/.build": "${workspaceRoot}"
+                "/var/www/html": "${workspaceRoot}"
             }
         },
         {
