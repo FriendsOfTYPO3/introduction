@@ -1,11 +1,9 @@
-rootPageId: 1
 base: /
-baseVariants: {  }
 languages:
   -
     title: English
     enabled: true
-    languageId: '0'
+    languageId: 0
     base: /
     typo3Language: default
     locale: en_US.UTF-8
@@ -17,7 +15,7 @@ languages:
   -
     title: Dansk
     enabled: true
-    languageId: '1'
+    languageId: 1
     base: /da/
     typo3Language: da
     locale: da_DK.UTF-8
@@ -31,7 +29,7 @@ languages:
   -
     title: German
     enabled: true
-    languageId: '2'
+    languageId: 2
     base: /de/
     typo3Language: de
     locale: de_DE.UTF-8
@@ -42,5 +40,5 @@ languages:
     fallbackType: fallback
     fallbacks: '1,0'
     flag: de
-errorHandling: {  }
-routes: {  }
+rootPageId: 1
+websiteTitle: 'TYPO3 Introduction Package'

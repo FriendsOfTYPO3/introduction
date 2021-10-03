@@ -10,6 +10,8 @@
 	"homepage": "https://typo3.org",
 	"license": "GPL-2.0-or-later",
 	"require": {
+		"php": "^7.2",
+		"ext-pdo": "*",
 		"bk2k/bootstrap-package": "^12.0.2",
 		"typo3/cms-core": "^10.4.10",
 		"typo3/cms-felogin": "^10.4.10",
@@ -40,6 +42,11 @@
 			"app-dir": ".build",
 			"extension-key": "introduction",
 			"web-dir": ".build/public"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\CMS\\Introduction\\": "Classes"
 		}
 	},
 	"scripts": {
