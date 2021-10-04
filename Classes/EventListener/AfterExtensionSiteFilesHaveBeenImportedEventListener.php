@@ -62,7 +62,7 @@ final class AfterExtensionSiteFilesHaveBeenImportedEventListener
     {
         // Remove existing configuration
         $configuration['errorHandling'] = array_filter(
-            $configuration['errorHandling'],
+            $configuration['errorHandling'] ?? [],
             fn ($errorHandler) => ($errorHandler['errorCode'] ?? null) !== 404
         );
 

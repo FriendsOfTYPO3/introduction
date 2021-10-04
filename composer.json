@@ -14,6 +14,7 @@
 		"ext-pdo": "*",
 		"bk2k/bootstrap-package": "^12.0.2",
 		"typo3/cms-core": "^10.4.10",
+		"typo3/cms-extensionmanager": "^10.4.10",
 		"typo3/cms-felogin": "^10.4.10",
 		"typo3/cms-filemetadata": "^10.4.10",
 		"typo3/cms-form": "^10.4.10",
