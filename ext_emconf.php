@@ -26,6 +26,7 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '10.4.10-10.4.99',
             'bootstrap_package' => '11.0.3-11.0.99',
+            'extensionmanager' => '10.4.10-10.4.99',
             'felogin' => '10.4.10-10.4.99',
             'filemetadata' => '10.4.10-10.4.99',
             'form' => '10.4.10-10.4.99',
