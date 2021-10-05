@@ -105,7 +105,7 @@ final class AfterExtensionSiteFilesHaveBeenImportedEventListener
         ;
 
         if (($page = $result->fetchAssociative()) !== false) {
-            return $page['uid'];
+            return (int)$page['uid'];
         }
 
         throw new \RuntimeException(\sprintf(
