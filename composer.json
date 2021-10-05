@@ -10,7 +10,7 @@
 	"homepage": "https://typo3.org",
 	"license": "GPL-2.0-or-later",
 	"require": {
-		"php": "^7.2",
+		"php": ">=7.4.1",
 		"ext-pdo": "*",
 		"bk2k/bootstrap-package": "^12.0.3",
 		"typo3/cms-core": "^11.5",
