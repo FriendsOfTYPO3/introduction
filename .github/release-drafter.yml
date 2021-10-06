@@ -33,4 +33,3 @@ template: |
   ## Changes since $PREVIOUS_TAG
 
   $CHANGES
-filter-by-commitish: true
