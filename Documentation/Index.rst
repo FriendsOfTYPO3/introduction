@@ -1,4 +1,4 @@
-.. include:: /Includes.txt
+.. include:: /Includes.rst.txt
 
 =======================================
 The Official TYPO3 Introduction Package
