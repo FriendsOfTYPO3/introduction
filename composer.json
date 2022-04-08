@@ -12,7 +12,7 @@
 	"support": {
 		"issues": "https://github.com/FriendsOfTYPO3/introduction/issues",
 		"source": "https://github.com/FriendsOfTYPO3/introduction",
-		"docs": "https://docs.typo3.org/p/typo3/cms-introduction/master/en-us/"
+		"docs": "https://docs.typo3.org/p/typo3/cms-introduction/main/en-us/"
 	},
 	"require": {
 		"php": ">=7.4.1",
