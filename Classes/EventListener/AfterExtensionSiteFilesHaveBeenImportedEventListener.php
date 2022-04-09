@@ -73,7 +73,7 @@ final class AfterExtensionSiteFilesHaveBeenImportedEventListener
             'errorContentSource' => \sprintf(
                 't3://page?uid=%d',
                 $this->getNotFoundErrorPageUid($configuration['rootPageId'])
-            )
+            ),
         ];
     }
 
