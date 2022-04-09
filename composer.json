@@ -1,14 +1,19 @@
 {
 	"name": "typo3/cms-introduction",
-	"type": "typo3-cms-extension",
 	"description": "The Official TYPO3 Introduction Package",
+	"license": "GPL-2.0-or-later",
+	"type": "typo3-cms-extension",
 	"keywords": [
 		"TYPO3 CMS",
 		"introduction",
 		"bootstrap"
 	],
 	"homepage": "https://typo3.org",
-	"license": "GPL-2.0-or-later",
+	"support": {
+		"issues": "https://github.com/FriendsOfTYPO3/introduction/issues",
+		"source": "https://github.com/FriendsOfTYPO3/introduction",
+		"docs": "https://docs.typo3.org/p/typo3/cms-introduction/master/en-us/"
+	},
 	"require": {
 		"php": ">=7.4.1",
 		"ext-pdo": "*",
@@ -24,13 +29,27 @@
 		"typo3/minimal": "^11.4"
 	},
 	"require-dev": {
+		"ergebnis/composer-normalize": "^2.25",
 		"helhum/typo3-console": "^7.0.2",
 		"typo3/cms-belog": "^11.5",
 		"typo3/cms-lowlevel": "^11.5",
 		"typo3/cms-scheduler": "^11.5",
-		"typo3/cms-setup": "^11.5"
+		"typo3/cms-setup": "^11.5",
+		"typo3/coding-standards": "^0.5.1"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"TYPO3\\CMS\\Introduction\\": "Classes"
+		}
 	},
 	"config": {
+		"allow-plugins": {
+			"typo3/cms-composer-installers": true,
+			"typo3/class-alias-loader": true,
+			"ergebnis/composer-normalize": true
+		},
 		"bin-dir": ".build/bin",
 		"sort-packages": true,
 		"vendor-dir": ".build/vendor"
@@ -45,21 +64,9 @@
 			"web-dir": ".build/public"
 		}
 	},
-	"autoload": {
-		"psr-4": {
-			"TYPO3\\CMS\\Introduction\\": "Classes"
-		}
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
 	"scripts": {
 		"post-autoload-dump": [
 			"test -f .build/public/typo3conf/LocalConfiguration.php || typo3cms install:setup"
 		]
-	},
-	"support": {
-		"issues": "https://github.com/FriendsOfTYPO3/introduction/issues",
-		"source": "https://github.com/FriendsOfTYPO3/introduction",
-		"docs": "https://docs.typo3.org/p/typo3/cms-introduction/master/en-us/"
 	}
 }
