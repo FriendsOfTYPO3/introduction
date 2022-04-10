@@ -40,15 +40,8 @@ require the package via Composer:
 
     composer require typo3/cms-introduction
 
-Since TYPO3 11.5 it is essential to setup the extension afterwards by running
-the following command:
-
-.. code-block:: bash
-
-    composer exec typo3 extension:setup
-
-For older core versions go to the backend extension manager and activate the
-extension in "Installed Extensions".
+Then go to the backend extension manager and activate the extension in
+"Installed Extensions".
 
 
 .. index:: Removal
