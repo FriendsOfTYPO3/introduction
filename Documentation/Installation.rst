@@ -10,7 +10,7 @@ Installation
 TYPO3 download based instance
 -----------------------------
 
-If you downloaded and unpacked a full TYPO3 core from `get.typo3.org <https://get.typo3.org>`_,
+If you downloaded and unpacked a full TYPO3 core from `get.typo3.org <https://get.typo3.org/version/10>`_,
 just :doc:`install the system <t3install:Index>` as usual. In the last
 installation step you can select the option *Yes, download the list of
 distributions*. On first backend login, you will be redirected to the extension

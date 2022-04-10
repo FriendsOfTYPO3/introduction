@@ -12,7 +12,7 @@
 	"support": {
 		"issues": "https://github.com/FriendsOfTYPO3/introduction/issues",
 		"source": "https://github.com/FriendsOfTYPO3/introduction",
-		"docs": "https://docs.typo3.org/p/typo3/cms-introduction/main/en-us/"
+		"docs": "https://docs.typo3.org/p/typo3/cms-introduction/4.3/en-us/"
 	},
 	"require": {
 		"bk2k/bootstrap-package": "^12.0.2",
