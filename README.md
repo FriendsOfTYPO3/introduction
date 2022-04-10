@@ -6,7 +6,7 @@
 # TYPO3 extension `introduction`
 
 This is the *Official TYPO3 Introduction Package*, a carefully crafted TYPO3
-[distribution](https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/CreateNewDistribution/Index.html)
+[distribution](https://docs.typo3.org/m/typo3/reference-coreapi/11.5/en-us/ExtensionArchitecture/CreateNewDistribution/Index.html)
 giving you a small insight in the powerful toolbox of the TYPO3 CMS framework.
 
 It comes with a full-fledged website based on Benjamin Kott's
