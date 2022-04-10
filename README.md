@@ -6,7 +6,7 @@
 # TYPO3 extension `introduction`
 
 This is the *Official TYPO3 Introduction Package*, a carefully crafted TYPO3
-[distribution](https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/CreateNewDistribution/Index.html)
+[distribution](https://docs.typo3.org/m/typo3/reference-coreapi/11.5/en-us/ExtensionArchitecture/CreateNewDistribution/Index.html)
 giving you a small insight in the powerful toolbox of the TYPO3 CMS framework.
 
 It comes with a full-fledged website based on Benjamin Kott's
@@ -16,5 +16,5 @@ and Twitter Bootstrap, with simple options to customize the base theme.
 |                  | URL                                                           |
 |------------------|---------------------------------------------------------------|
 | **Repository:**  | <https://github.com/FriendsOfTYPO3/introduction>              |
-| **Read online:** | <https://docs.typo3.org/p/typo3/cms-introduction/main/en-us/> |
+| **Read online:** | <https://docs.typo3.org/p/typo3/cms-introduction/4.4/en-us/>  |
 | **TER:**         | <https://extensions.typo3.org/extension/introduction>         |
