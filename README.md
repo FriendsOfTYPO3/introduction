@@ -1,27 +1,20 @@
-This is the Official TYPO3 Introduction Package
-===============================================
+[![Latest Stable Version](https://poser.pugx.org/typo3/cms-introduction/v/stable.svg)](https://extensions.typo3.org/extension/introduction/)
+[![TYPO3 10](https://img.shields.io/badge/TYPO3-10-orange.svg?style=flat-square)](https://get.typo3.org/version/10)
+[![Total Downloads](https://poser.pugx.org/typo3/cms-introduction/d/total.svg)](https://packagist.org/packages/typo3/cms-introduction)
+[![Monthly Downloads](https://poser.pugx.org/typo3/cms-introduction/d/monthly)](https://packagist.org/packages/typo3/cms-introduction)
 
-This carefully crafted extension gives you a small insight in the powerful
-toolbox of the TYPO3 CMS framework.
+# TYPO3 extension `introduction`
 
-It comes with a full-fledged website, delivering a theme based on Twitter
-bootstrap with simple options to modify the base theme.
+This is the *Official TYPO3 Introduction Package*, a carefully crafted TYPO3
+[distribution](https://docs.typo3.org/m/typo3/reference-coreapi/10.4/en-us/ExtensionArchitecture/CreateNewDistribution/Index.html)
+giving you a small insight in the powerful toolbox of the TYPO3 CMS framework.
 
-Installation
-------------
+It comes with a full-fledged website based on Benjamin Kott's
+[Bootstrap Package](https://extensions.typo3.org/extension/bootstrap_package)
+and Twitter Bootstrap, with simple options to customize the base theme.
 
-a) Install `introduction` distribution using the extension manager in the
-backend of your TYPO3 installation. Find the distribution in "Get preconfigured distribution".
-
-b) Alternatively, add `introduction` via composer `composer require typo3/cms-introduction`
-to your existing composer based project, go the backend extension manager and
-load the extension.
-
-Detailed documentation
-----------------------
-
-[Introduction](Documentation/Introduction.rst)
-
-[Installation](Documentation/Installation.rst)
-
-[Maintaining ext:introduction](Documentation/Maintenance.rst)
+|                  | URL                                                           |
+|------------------|---------------------------------------------------------------|
+| **Repository:**  | <https://github.com/FriendsOfTYPO3/introduction>              |
+| **Read online:** | <https://docs.typo3.org/p/typo3/cms-introduction/4.3/en-us/>  |
+| **TER:**         | <https://extensions.typo3.org/extension/introduction>         |

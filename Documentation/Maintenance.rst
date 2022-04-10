@@ -1,4 +1,6 @@
-.. include:: Includes.txt
+.. include:: /Includes.rst.txt
+
+.. index:: Maintenance
 
 Maintenance
 ===========

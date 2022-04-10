@@ -1,4 +1,4 @@
-.. include:: Includes.txt
+.. include:: /Includes.rst.txt
 
 Introduction
 ============
@@ -17,7 +17,7 @@ Credits & Source
 ----------------
 
 Source code and issue tracker of the introduction extension can be found on
-`github <https://github.com/FriendsOfTYPO3/introduction>`_
+`github <https://github.com/FriendsOfTYPO3/introduction/tree/4.3>`_
 
 Kudos to all contributors, and especially:
 

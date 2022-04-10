@@ -1,50 +1,57 @@
-.. include:: Includes.txt
-
-.. _start:
+.. include:: /Includes.rst.txt
 
 =======================================
 The Official TYPO3 Introduction Package
 =======================================
 
-.. only:: html
+:Extension key:
+   introduction
 
-   :Classification:
-      distribution
+:Package name:
+   typo3/cms-introduction
 
-   :Version:
-      |release|
+:Version:
+   |release|
 
-   :Language:
-      en
+:Language:
+   en
 
-   :Description:
-      The Official TYPO3 Introduction Package creates a show-off website with content
+:Author:
+   TYPO3 Core Team & Contributors
 
-   :Keywords:
-      distribution, official, bootstrap, introduction
+:License:
+   This document is published under the
+   `Open Content License <https://www.openhub.net/licenses/opl>`__.
 
-   :Copyright:
-      2000-2018
+:Rendered:
+   |today|
 
-   :Author:
-      TYPO3 core team
+----
 
-   :License:
-      This document is published under the Open Content License available
-      from `www.opencontent.org/openpub/ <http://www.opencontent.org/openpub/>`_
+This extension is a carefully crafted TYPO3
+:doc:`distribution <t3coreapi:ExtensionArchitecture/CreateNewDistribution/Index>`
+giving you a small insight in the powerful toolbox of the TYPO3 CMS framework.
 
-   :Rendered:
-      |today|
+It comes with a full-fledged website based on Benjamin Kott's
+`Bootstrap Package <https://extensions.typo3.org/extension/bootstrap_package>`__
+and Twitter Bootstrap, with simple options to customize the base theme.
 
-The content of this document is related to TYPO3 CMS,
-a GNU/GPL CMS/Framework available from `www.typo3.org <https://typo3.org/>`_
+----
 
-**Table of Contents**
+**Table of Contents:**
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :titlesonly:
 
    Introduction
    Installation
    Maintenance
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap
+   genindex
