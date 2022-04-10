@@ -13,8 +13,8 @@ It comes with a full-fledged website based on Benjamin Kott's
 [Bootstrap Package](https://extensions.typo3.org/extension/bootstrap_package)
 and Twitter Bootstrap, with simple options to customize the base theme.
 
-|                  | URL                                                         |
-|------------------|-------------------------------------------------------------|
-| **Repository:**  | https://github.com/FriendsOfTYPO3/introduction              |
-| **Read online:** | https://docs.typo3.org/p/typo3/cms-introduction/main/en-us/ |
-| **TER:**         | https://extensions.typo3.org/extension/introduction/        |
+|                  | URL                                                           |
+|------------------|---------------------------------------------------------------|
+| **Repository:**  | <https://github.com/FriendsOfTYPO3/introduction>              |
+| **Read online:** | <https://docs.typo3.org/p/typo3/cms-introduction/main/en-us/> |
+| **TER:**         | <https://extensions.typo3.org/extension/introduction>         |
