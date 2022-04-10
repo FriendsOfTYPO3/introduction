@@ -16,5 +16,5 @@ and Twitter Bootstrap, with simple options to customize the base theme.
 |                  | URL                                                           |
 |------------------|---------------------------------------------------------------|
 | **Repository:**  | <https://github.com/FriendsOfTYPO3/introduction>              |
-| **Read online:** | <https://docs.typo3.org/p/typo3/cms-introduction/main/en-us/> |
+| **Read online:** | <https://docs.typo3.org/p/typo3/cms-introduction/4.4/en-us/>  |
 | **TER:**         | <https://extensions.typo3.org/extension/introduction>         |
