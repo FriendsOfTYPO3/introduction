@@ -5,7 +5,7 @@
 Maintenance
 ===========
 
-..  attension::
+..  attention::
     This chapter is for developers who want to contribute and maintain the extension.
     It can also act as a kick start for other extension authors who want to create
     own distributions. It is not meant to be used to set up the distribution to use 
@@ -32,7 +32,7 @@ the content - pages, tt_content, assets and so on.
 Local development with DDEV
 ---------------------------
 
-..  attension::
+..  attention::
     This chapter is for developers who want to contribute and maintain the extension.
     See chapter :ref:`Installation` if you want to use the extension as distribution.
 
