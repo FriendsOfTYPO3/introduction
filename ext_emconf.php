@@ -25,6 +25,7 @@ $EM_CONF[$_EXTKEY] = [
     'constraints' => [
         'depends' => [
             'typo3' => '11.5.0-11.5.99',
+            'beuser' => '11.5.0-11.5.99',
             'bootstrap_package' => '12.0.3-12.9.99',
             'extensionmanager' => '11.5.0-11.5.99',
             'felogin' => '11.5.0-11.5.99',
