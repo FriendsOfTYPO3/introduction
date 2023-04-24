@@ -17,7 +17,7 @@
 	"require": {
 		"php": ">=7.4.1",
 		"ext-pdo": "*",
-		"bk2k/bootstrap-package": "^12.0.3",
+		"bk2k/bootstrap-package": "^13.0.1",
 		"typo3/cms-core": "^11.5",
 		"typo3/cms-extensionmanager": "^11.5",
 		"typo3/cms-felogin": "^11.5",
