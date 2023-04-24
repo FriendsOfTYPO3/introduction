@@ -31,6 +31,7 @@
 	},
 	"require-dev": {
 		"typo3/cms-belog": "^12.3 || 12.*.*@dev",
+		"typo3/cms-beuser": "^12.3 || 12.*.*@dev",
 		"typo3/cms-lowlevel": "^12.3 || 12.*.*@dev",
 		"typo3/cms-scheduler": "^12.3 || 12.*.*@dev",
 		"typo3/cms-setup": "^12.3 || 12.*.*@dev",
@@ -65,7 +66,7 @@
 	},
 	"scripts": {
 		"post-autoload-dump": [
-			"test -f config/system/settings.php || typo3 setup --force"
+			"test -f config/system/settings.php || typo3 setup --force -n"
 		]
 	}
 }
