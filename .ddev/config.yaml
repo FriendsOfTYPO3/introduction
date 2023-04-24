@@ -16,8 +16,10 @@ nfs_mount_enabled: false
 mutagen_enabled: false
 hooks:
     post-start:
+        - exec: mv -f .build/public/typo3conf/AdditionalConfiguration.php config/system/additional.php
         - composer: install
     pre-start:
+        - exec-host: mkdir -p .build/public/typo3
         - exec-host: mkdir -p config/system
 use_dns_when_possible: true
 composer_version: "2"
