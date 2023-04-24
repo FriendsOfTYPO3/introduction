@@ -19,6 +19,8 @@ reset_project () {
     fi
 
     rm -rf .build
+    rm -rf config
+    rm -rf var
     rm -r composer.lock
     ddev delete -Oy
 
