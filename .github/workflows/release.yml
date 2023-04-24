@@ -4,9 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: 'Release Mode, possible values are "draft" or "publish"'
+        description: 'Release Mode'
         required: true
         default: 'draft'
+        type: choice
+        options:
+        - draft
+        - publish
 
 env:
   TYPO3_EXTENSION_KEY: introduction
