@@ -15,28 +15,26 @@
 		"docs": "https://docs.typo3.org/p/typo3/cms-introduction/main/en-us/"
 	},
 	"require": {
-		"php": ">=7.4.1",
+		"php": "^8.1",
 		"ext-pdo": "*",
 		"bk2k/bootstrap-package": "^13.0.1",
-		"typo3/cms-beuser": "^11.5",
-		"typo3/cms-core": "^11.5",
-		"typo3/cms-extensionmanager": "^11.5",
-		"typo3/cms-felogin": "^11.5",
-		"typo3/cms-filemetadata": "^11.5",
-		"typo3/cms-form": "^11.5",
-		"typo3/cms-impexp": "^11.5",
-		"typo3/cms-indexed-search": "^11.5",
-		"typo3/cms-tstemplate": "^11.5",
-		"typo3/minimal": "^11.4"
+		"typo3/cms-beuser": "^12.3 || 12.*.*@dev",
+		"typo3/cms-core": "^12.3 || 12.*.*@dev",
+		"typo3/cms-extensionmanager": "^12.3 || 12.*.*@dev",
+		"typo3/cms-felogin": "^12.3 || 12.*.*@dev",
+		"typo3/cms-filemetadata": "^12.3 || 12.*.*@dev",
+		"typo3/cms-form": "^12.3 || 12.*.*@dev",
+		"typo3/cms-impexp": "^12.3 || 12.*.*@dev",
+		"typo3/cms-indexed-search": "^12.3 || 12.*.*@dev",
+		"typo3/cms-tstemplate": "^12.3 || 12.*.*@dev",
+		"typo3/minimal": "^12.0 || 12.*.*@dev"
 	},
 	"require-dev": {
-		"ergebnis/composer-normalize": "^2.25",
-		"helhum/typo3-console": "^7.0.2",
-		"typo3/cms-belog": "^11.5",
-		"typo3/cms-lowlevel": "^11.5",
-		"typo3/cms-scheduler": "^11.5",
-		"typo3/cms-setup": "^11.5",
-		"typo3/coding-standards": "^0.5.1"
+		"typo3/cms-belog": "^12.3 || 12.*.*@dev",
+		"typo3/cms-lowlevel": "^12.3 || 12.*.*@dev",
+		"typo3/cms-scheduler": "^12.3 || 12.*.*@dev",
+		"typo3/cms-setup": "^12.3 || 12.*.*@dev",
+		"typo3/coding-standards": "^0.7.1"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
@@ -48,10 +46,10 @@
 	"config": {
 		"allow-plugins": {
 			"typo3/cms-composer-installers": true,
-			"typo3/class-alias-loader": true,
-			"ergebnis/composer-normalize": true
+			"typo3/class-alias-loader": true
 		},
 		"bin-dir": ".build/bin",
+		"optimize-autoloader": true,
 		"sort-packages": true,
 		"vendor-dir": ".build/vendor"
 	},
@@ -67,7 +65,7 @@
 	},
 	"scripts": {
 		"post-autoload-dump": [
-			"test -f .build/public/typo3conf/LocalConfiguration.php || typo3cms install:setup"
+			"test -f config/system/settings.php || typo3 setup --force"
 		]
 	}
 }

@@ -1,4 +1,6 @@
-/.build/*
-/Documentation-GENERATED-temp/*
-/.php-cs-fixer.cache
-/composer.lock
+.build
+Documentation-GENERATED-temp/*
+.php-cs-fixer.cache
+composer.lock
+config/
+var/
