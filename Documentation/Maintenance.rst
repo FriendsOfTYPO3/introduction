@@ -5,9 +5,11 @@
 Maintenance
 ===========
 
-This chapter is for developers who want to contribute and maintain the extension.
-It can also act as a kick start for other extension authors who want to create
-own distributions.
+..  attention::
+    This chapter is for developers who want to contribute and maintain the extension.
+    It can also act as a kick start for other extension authors who want to create
+    own distributions. It is not meant to be used to set up the distribution to use 
+    it. See chapter :ref:`Installation` for this topic.
 
 The basic setup of ext:introduction and distributions in general is described
 in the :ref:`TYPO3 Core API. <t3coreapi:distribution>` It is a good idea to
@@ -29,6 +31,10 @@ the content - pages, tt_content, assets and so on.
 
 Local development with DDEV
 ---------------------------
+
+..  attention::
+    This chapter is for developers who want to contribute and maintain the extension.
+    See chapter :ref:`Installation` if you want to use the extension as distribution.
 
 A DDEV Local configuration is included with this repository to simplify the
 local development. A TYPO3 instance will be setup automatically while
