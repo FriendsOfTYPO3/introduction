@@ -36,7 +36,7 @@ starting the project by running `ddev start`. To login to the Backend or
 Install Tool afterwards use the following credentials:
 
 *   User: admin
-*   Password: password
+*   Password: Password!1
 
 
 Reset the project
