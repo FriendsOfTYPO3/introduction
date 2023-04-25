@@ -15,7 +15,7 @@ languages:
   -
     title: Dansk
     enabled: true
-    languageId: 1
+    languageId: 2
     base: /da/
     typo3Language: da
     locale: da_DK.UTF-8
@@ -29,7 +29,7 @@ languages:
   -
     title: German
     enabled: true
-    languageId: 2
+    languageId: 1
     base: /de/
     typo3Language: de
     locale: de_DE.UTF-8
