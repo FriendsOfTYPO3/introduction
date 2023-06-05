@@ -2386,7 +2386,19 @@
 					<pid>40</pid>
 					<title>Thank you!</title>
 					<relations index="rels" type="array"></relations>
-					<softrefs type="array"></softrefs>
+					<softrefs type="array">
+						<softref_element index="bodytext:typolink_tag:1" type="array">
+							<field>bodytext</field>
+							<spKey>typolink_tag</spKey>
+							<matchString>&lt;a class=&quot;btn btn-primary&quot; href=&quot;t3://page?uid=39&quot;&gt;</matchString>
+							<subst type="array">
+								<type>db</type>
+								<recordRef>pages:39</recordRef>
+								<tokenID>1a43eedd3ec46816aba684c3cd053d03</tokenID>
+								<tokenValue>39</tokenValue>
+							</subst>
+						</softref_element>
+					</softrefs>
 				</rec>
 				<rec index="144" type="array">
 					<uid>144</uid>
@@ -27342,7 +27354,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="l10n_source" type="integer">0</field>
 				<field index="l10n_state" type="NULL"></field>
 				<field index="t3_origuid" type="integer">0</field>
-				<field index="l18n_diffsource">{&quot;background_image_options&quot;:&quot;&quot;}</field>
+				<field index="l18n_diffsource">{&quot;CType&quot;:&quot;&quot;,&quot;colPos&quot;:&quot;&quot;,&quot;header&quot;:&quot;&quot;,&quot;header_layout&quot;:&quot;&quot;,&quot;header_position&quot;:&quot;&quot;,&quot;date&quot;:&quot;&quot;,&quot;header_link&quot;:&quot;&quot;,&quot;subheader&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;layout&quot;:&quot;&quot;,&quot;frame_class&quot;:&quot;&quot;,&quot;space_before_class&quot;:&quot;&quot;,&quot;space_after_class&quot;:&quot;&quot;,&quot;frame_layout&quot;:&quot;&quot;,&quot;frame_options&quot;:&quot;&quot;,&quot;background_color_class&quot;:&quot;&quot;,&quot;background_image&quot;:&quot;&quot;,&quot;background_image_options&quot;:&quot;&quot;,&quot;sectionIndex&quot;:&quot;&quot;,&quot;linkToTop&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;rowDescription&quot;:&quot;&quot;}</field>
 				<field index="t3ver_oid" type="integer">0</field>
 				<field index="t3ver_wsid" type="integer">0</field>
 				<field index="t3ver_state" type="integer">0</field>
@@ -27356,7 +27368,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="header">Thank you!</field>
 				<field index="header_position"></field>
 				<field index="bodytext">&lt;p&gt;We look forward to hearing from you and will contact you as soon as possible.&lt;/p&gt;
-&lt;p&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;37&quot;&gt;Back to contact form&lt;/a&gt;&lt;/p&gt;</field>
+&lt;p&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;t3://page?uid=39&quot;&gt;Back to contact form&lt;/a&gt;&lt;/p&gt;</field>
 				<field index="bullets_type" type="integer">0</field>
 				<field index="uploads_description" type="integer">0</field>
 				<field index="uploads_type" type="integer">0</field>
@@ -27442,12 +27454,34 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
                 &lt;field index=&quot;filter&quot;&gt;
                     &lt;value index=&quot;vDEF&quot;&gt;&lt;/value&gt;
                 &lt;/field&gt;
+                &lt;field index=&quot;behaviour&quot;&gt;
+                    &lt;value index=&quot;vDEF&quot;&gt;cover&lt;/value&gt;
+                &lt;/field&gt;
             &lt;/language&gt;
         &lt;/sheet&gt;
     &lt;/data&gt;
 &lt;/T3FlexForms&gt;</field>
 			</fieldlist>
 			<related index="rels" type="array">
+				<field index="bodytext" type="array">
+					<softrefs type="array">
+						<keys type="array">
+							<softref_key index="typolink_tag" type="array">
+								<softref_element index="1" type="array">
+									<matchString>&lt;a class=&quot;btn btn-primary&quot; href=&quot;t3://page?uid=39&quot;&gt;</matchString>
+									<subst type="array">
+										<type>db</type>
+										<recordRef>pages:39</recordRef>
+										<tokenID>1a43eedd3ec46816aba684c3cd053d03</tokenID>
+										<tokenValue>39</tokenValue>
+									</subst>
+								</softref_element>
+							</softref_key>
+						</keys>
+						<tokenizedContent>&lt;p&gt;We look forward to hearing from you and will contact you as soon as possible.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;{softref:1a43eedd3ec46816aba684c3cd053d03}&quot;&gt;Back to contact form&lt;/a&gt;&lt;/p&gt;</tokenizedContent>
+					</softrefs>
+				</field>
 				<field index="background_image_options" type="array">
 					<type>flex</type>
 					<flexform index="flexFormRels" type="array">
