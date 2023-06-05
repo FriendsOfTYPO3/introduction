@@ -39207,7 +39207,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="l10n_source" type="integer">0</field>
 				<field index="l10n_state" type="NULL"></field>
 				<field index="t3_origuid" type="integer">0</field>
-				<field index="l18n_diffsource">{&quot;CType&quot;:null,&quot;colPos&quot;:null,&quot;header&quot;:null,&quot;header_layout&quot;:null,&quot;header_position&quot;:null,&quot;date&quot;:null,&quot;header_link&quot;:null,&quot;subheader&quot;:null,&quot;bodytext&quot;:null,&quot;table_delimiter&quot;:null,&quot;table_enclosure&quot;:null,&quot;table_caption&quot;:null,&quot;layout&quot;:null,&quot;frame_class&quot;:null,&quot;space_before_class&quot;:null,&quot;space_after_class&quot;:null,&quot;background_image&quot;:null,&quot;background_color_class&quot;:null,&quot;cols&quot;:null,&quot;table_class&quot;:null,&quot;table_header_position&quot;:null,&quot;table_tfoot&quot;:null,&quot;sectionIndex&quot;:null,&quot;linkToTop&quot;:null,&quot;sys_language_uid&quot;:null,&quot;hidden&quot;:null,&quot;starttime&quot;:null,&quot;endtime&quot;:null,&quot;fe_group&quot;:null,&quot;editlock&quot;:null,&quot;categories&quot;:null,&quot;rowDescription&quot;:null}</field>
+				<field index="l18n_diffsource">{&quot;CType&quot;:&quot;&quot;,&quot;colPos&quot;:&quot;&quot;,&quot;header&quot;:&quot;&quot;,&quot;header_layout&quot;:&quot;&quot;,&quot;header_position&quot;:&quot;&quot;,&quot;date&quot;:&quot;&quot;,&quot;header_link&quot;:&quot;&quot;,&quot;subheader&quot;:&quot;&quot;,&quot;bodytext&quot;:&quot;&quot;,&quot;table_delimiter&quot;:&quot;&quot;,&quot;table_enclosure&quot;:&quot;&quot;,&quot;table_caption&quot;:&quot;&quot;,&quot;layout&quot;:&quot;&quot;,&quot;frame_class&quot;:&quot;&quot;,&quot;space_before_class&quot;:&quot;&quot;,&quot;space_after_class&quot;:&quot;&quot;,&quot;frame_layout&quot;:&quot;&quot;,&quot;frame_options&quot;:&quot;&quot;,&quot;background_color_class&quot;:&quot;&quot;,&quot;background_image&quot;:&quot;&quot;,&quot;background_image_options&quot;:&quot;&quot;,&quot;cols&quot;:&quot;&quot;,&quot;table_class&quot;:&quot;&quot;,&quot;table_header_position&quot;:&quot;&quot;,&quot;table_tfoot&quot;:&quot;&quot;,&quot;sectionIndex&quot;:&quot;&quot;,&quot;linkToTop&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;rowDescription&quot;:&quot;&quot;}</field>
 				<field index="t3ver_oid" type="integer">0</field>
 				<field index="t3ver_wsid" type="integer">0</field>
 				<field index="t3ver_state" type="integer">0</field>
@@ -39266,7 +39266,7 @@ Row 4|Row 4|Row 4</field>
 				<field index="table_caption"></field>
 				<field index="table_delimiter" type="integer">124</field>
 				<field index="table_enclosure" type="integer">0</field>
-				<field index="table_header_position" type="integer">0</field>
+				<field index="table_header_position" type="integer">1</field>
 				<field index="table_tfoot" type="integer">0</field>
 				<field index="teaser"></field>
 				<field index="aspect_ratio">1.3333333333333</field>
