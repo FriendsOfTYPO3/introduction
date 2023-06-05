@@ -2362,8 +2362,8 @@
 					<pid>39</pid>
 					<title>Contactform</title>
 					<relations index="rels" type="array">
-						<element index="pages:38" type="array">
-							<id>38</id>
+						<element index="pages:40" type="array">
+							<id>40</id>
 							<table>pages</table>
 						</element>
 					</relations>
@@ -27054,7 +27054,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 				<field index="l10n_source" type="integer">0</field>
 				<field index="l10n_state" type="NULL"></field>
 				<field index="t3_origuid" type="integer">0</field>
-				<field index="l18n_diffsource">{&quot;pi_flexform&quot;:&quot;&quot;}</field>
+				<field index="l18n_diffsource">{&quot;CType&quot;:&quot;&quot;,&quot;colPos&quot;:&quot;&quot;,&quot;header&quot;:&quot;&quot;,&quot;header_layout&quot;:&quot;&quot;,&quot;header_position&quot;:&quot;&quot;,&quot;date&quot;:&quot;&quot;,&quot;header_link&quot;:&quot;&quot;,&quot;subheader&quot;:&quot;&quot;,&quot;pi_flexform&quot;:&quot;&quot;,&quot;layout&quot;:&quot;&quot;,&quot;frame_class&quot;:&quot;&quot;,&quot;space_before_class&quot;:&quot;&quot;,&quot;space_after_class&quot;:&quot;&quot;,&quot;frame_layout&quot;:&quot;&quot;,&quot;frame_options&quot;:&quot;&quot;,&quot;background_color_class&quot;:&quot;&quot;,&quot;background_image&quot;:&quot;&quot;,&quot;background_image_options&quot;:&quot;&quot;,&quot;sectionIndex&quot;:&quot;&quot;,&quot;linkToTop&quot;:&quot;&quot;,&quot;sys_language_uid&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;,&quot;starttime&quot;:&quot;&quot;,&quot;endtime&quot;:&quot;&quot;,&quot;fe_group&quot;:&quot;&quot;,&quot;editlock&quot;:&quot;&quot;,&quot;categories&quot;:&quot;&quot;,&quot;rowDescription&quot;:&quot;&quot;}</field>
 				<field index="t3ver_oid" type="integer">0</field>
 				<field index="t3ver_wsid" type="integer">0</field>
 				<field index="t3ver_state" type="integer">0</field>
@@ -27126,9 +27126,12 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
         &lt;sheet index=&quot;54b64f2af042660e87d8b53726555def&quot;&gt;
             &lt;language index=&quot;lDEF&quot;&gt;
                 &lt;field index=&quot;settings.finishers.Redirect.pageUid&quot;&gt;
-                    &lt;value index=&quot;vDEF&quot;&gt;38&lt;/value&gt;
+                    &lt;value index=&quot;vDEF&quot;&gt;40&lt;/value&gt;
                 &lt;/field&gt;
                 &lt;field index=&quot;settings.finishers.Redirect.additionalParameters&quot;&gt;
+                    &lt;value index=&quot;vDEF&quot;&gt;&lt;/value&gt;
+                &lt;/field&gt;
+                &lt;field index=&quot;settings.finishers.Redirect.fragment&quot;&gt;
                     &lt;value index=&quot;vDEF&quot;&gt;&lt;/value&gt;
                 &lt;/field&gt;
             &lt;/language&gt;
@@ -27187,6 +27190,9 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
                 &lt;field index=&quot;filter&quot;&gt;
                     &lt;value index=&quot;vDEF&quot;&gt;&lt;/value&gt;
                 &lt;/field&gt;
+                &lt;field index=&quot;behaviour&quot;&gt;
+                    &lt;value index=&quot;vDEF&quot;&gt;cover&lt;/value&gt;
+                &lt;/field&gt;
             &lt;/language&gt;
         &lt;/sheet&gt;
     &lt;/data&gt;
@@ -27199,7 +27205,7 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 						<db_relations index="db" type="array">
 							<path index="54b64f2af042660e87d8b53726555def/lDEF/settings.finishers.Redirect.pageUid/vDEF/" type="array">
 								<element index="0" type="array">
-									<id>38</id>
+									<id>40</id>
 									<table>pages</table>
 								</element>
 							</path>
