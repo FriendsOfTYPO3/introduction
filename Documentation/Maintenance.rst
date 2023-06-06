@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
-
 .. index:: Maintenance
+.. _maintenance:
 
 Maintenance
 ===========
@@ -8,12 +8,12 @@ Maintenance
 ..  attention::
     This chapter is for developers who want to contribute and maintain the extension.
     It can also act as a kick start for other extension authors who want to create
-    own distributions. It is not meant to be used to set up the distribution to use 
+    own distributions. It is not meant to be used to set up the distribution to use
     it. See chapter :ref:`Installation` for this topic.
 
 The basic setup of ext:introduction and distributions in general is described
-in the :ref:`TYPO3 Core API. <t3coreapi:distribution>` It is a good idea to
-read this as an introduction to the concept of distributions.
+in the :ref:`TYPO3 Core API <t3coreapi:distribution>`.
+It is a good idea to read this as an introduction to the concept of distributions.
 
 
 General restrictions

@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
-
 .. index:: Installation
+.. _installation:
 
 Installation
 ============
@@ -11,7 +11,7 @@ TYPO3 download based instance
 -----------------------------
 
 If you downloaded and unpacked a full TYPO3 core from `get.typo3.org <https://get.typo3.org>`_,
-just :doc:`install the system <t3install:Index>` as usual. In the last
+just :ref:`install the system <t3install:install>` as usual. In the last
 installation step you can select the option *Yes, download the list of
 distributions*. On first backend login, you will be redirected to the extension
 manager "Get preconfigured distribution" and can install the "The Official

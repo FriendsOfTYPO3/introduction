@@ -1,7 +1,7 @@
 version: '3'
 services:
   t3docmake:
-    image: t3docs/render-documentation:latest
+    image: t3docs/render-documentation:develop
     command: makehtml
     volumes:
       - ../:/PROJECT:ro
