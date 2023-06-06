@@ -8,7 +8,7 @@ Maintenance
 ..  attention::
     This chapter is for developers who want to contribute and maintain the extension.
     It can also act as a kick start for other extension authors who want to create
-    own distributions. It is not meant to be used to set up the distribution to use 
+    own distributions. It is not meant to be used to set up the distribution to use
     it. See chapter :ref:`Installation` for this topic.
 
 The basic setup of ext:introduction and distributions in general is described
@@ -29,17 +29,13 @@ site setup. Dealing with :php:`ext:introduction` thus means dealing only with
 the content - pages, tt_content, assets and so on.
 
 
-Local development with DDEV
----------------------------
-
-..  attention::
-    This chapter is for developers who want to contribute and maintain the extension.
-    See chapter :ref:`Installation` if you want to use the extension as distribution.
+Maintenance with DDEV
+---------------------
 
 A DDEV Local configuration is included with this repository to simplify the
-local development. A TYPO3 instance will be setup automatically while
-starting the project by running `ddev start`. To login to the Backend or
-Install Tool afterwards use the following credentials:
+maintenance. A TYPO3 instance will be setup automatically while starting the
+project by running `ddev start`. To login to the Backend or Install Tool
+afterwards use the following credentials:
 
 *   User: admin
 *   Password: Password!1
