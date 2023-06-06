@@ -55,6 +55,7 @@ renderables:
                   fluidAdditionalAttributes:
                     placeholder: 'Full name and surname'
                     required: required
+                    autocomplete: name
                 validators:
                   -
                     identifier: NotEmpty
@@ -66,6 +67,7 @@ renderables:
                 properties:
                   fluidAdditionalAttributes:
                     placeholder: Company
+                    autocomplete: organization
               -
                 defaultValue: ''
                 type: Text
@@ -75,6 +77,7 @@ renderables:
                   fluidAdditionalAttributes:
                     placeholder: Email
                     required: required
+                    autocomplete: email
                 validators:
                   -
                     identifier: NotEmpty
