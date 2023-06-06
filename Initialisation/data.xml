@@ -47630,9 +47630,12 @@ Aenean ante elit, elementum et, varius ut, condimentum ut, sem. Aenean ante nequ
 				<field index="CType">text</field>
 				<field index="header">Address</field>
 				<field index="header_position"></field>
-				<field index="bodytext">&lt;address class=&quot;address&quot;&gt; &lt;p class=&quot;address-title&quot;&gt;&lt;strong&gt;John Doe&lt;/strong&gt;&lt;/p&gt; &lt;p class=&quot;address-address&quot;&gt;Street&lt;br /&gt; Zip &amp;amp; City&lt;/p&gt; &lt;p class=&quot;address-phone&quot;&gt;+49 1234 456-7890&lt;/p&gt; &lt;p class=&quot;address-fax&quot;&gt;+49 1234 456-7891&lt;/p&gt; &lt;p class=&quot;address-email&quot;&gt;john.doe@example.com&lt;/p&gt; &lt;p class=&quot;address-www&quot;&gt;www.example.com&lt;/p&gt; &lt;/address&gt;
-
-</field>
+				<field index="bodytext">&lt;p&gt;&lt;strong&gt;John Doe&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Street&amp;nbsp;&lt;br /&gt;Zip &amp;amp; City&lt;/p&gt;
+&lt;p&gt;+49 1234 456-7890&lt;/p&gt;
+&lt;p&gt;+49 1234 456-7891&lt;/p&gt;
+&lt;p&gt;john.doe@example.com&lt;/p&gt;
+&lt;p&gt;www.example.com&lt;/p&gt;</field>
 				<field index="bullets_type" type="integer">0</field>
 				<field index="uploads_description" type="integer">0</field>
 				<field index="uploads_type" type="integer">0</field>
@@ -47721,9 +47724,12 @@ Aenean ante elit, elementum et, varius ut, condimentum ut, sem. Aenean ante nequ
 								</softref_element>
 							</softref_key>
 						</keys>
-						<tokenizedContent>&lt;address class=&quot;address&quot;&gt; &lt;p class=&quot;address-title&quot;&gt;&lt;strong&gt;John Doe&lt;/strong&gt;&lt;/p&gt; &lt;p class=&quot;address-address&quot;&gt;Street&lt;br /&gt; Zip &amp;amp; City&lt;/p&gt; &lt;p class=&quot;address-phone&quot;&gt;+49 1234 456-7890&lt;/p&gt; &lt;p class=&quot;address-fax&quot;&gt;+49 1234 456-7891&lt;/p&gt; &lt;p class=&quot;address-email&quot;&gt;{softref:8373ea7740e1e552a3c27a431b0497b0}&lt;/p&gt; &lt;p class=&quot;address-www&quot;&gt;www.example.com&lt;/p&gt; &lt;/address&gt;
-
-</tokenizedContent>
+						<tokenizedContent>&lt;p&gt;&lt;strong&gt;John Doe&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Street&amp;nbsp;&lt;br /&gt;Zip &amp;amp; City&lt;/p&gt;
+&lt;p&gt;+49 1234 456-7890&lt;/p&gt;
+&lt;p&gt;+49 1234 456-7891&lt;/p&gt;
+&lt;p&gt;{softref:8373ea7740e1e552a3c27a431b0497b0}&lt;/p&gt;
+&lt;p&gt;www.example.com&lt;/p&gt;</tokenizedContent>
 					</softrefs>
 				</field>
 			</related>
@@ -50616,9 +50622,7 @@ lib.dynamicContentSlide {
 				<field index="header">Add functionality to the core system</field>
 				<field index="header_position"></field>
 				<field index="bodytext">&lt;p&gt;There are more than 1,500 extensions available in the TYPO3 Extension Repository (TER) on TYPO3.org for you to browse and assess according to your needs. Download and install them directly with the TYPO3 backend Extension Manager. And TYPO3 is open source! You and your developers (or &lt;a href=&quot;https://typo3.com/services/find-a-typo3-partner/&quot;&gt;your TYPO3 service provider&lt;/a&gt;) can also create new, custom extensions to meet your specialised needs.&lt;/p&gt;
-&lt;ul class=&quot;list-inline&quot;&gt; 	&lt;li&gt;&lt;a class=&quot;btn btn-secondary&quot; href=&quot;https://packagist.org/explore/?type=typo3-cms-extension&quot; target=&quot;_blank&quot;&gt;Packagist&lt;/a&gt;&lt;/li&gt; 	&lt;li&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;https://extensions.typo3.org/&quot; target=&quot;_blank&quot;&gt;TYPO3 Extension Repository&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt;
-
-</field>
+&lt;ul class=&quot;list-inline&quot;&gt;&lt;li&gt;&lt;a class=&quot;btn btn-secondary&quot; href=&quot;https://packagist.org/explore/?type=typo3-cms-extension&quot;&gt;Packagist&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;https://extensions.typo3.org/&quot;&gt;TYPO3 Extension Repository&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</field>
 				<field index="bullets_type" type="integer">0</field>
 				<field index="uploads_description" type="integer">0</field>
 				<field index="uploads_type" type="integer">0</field>
@@ -50744,9 +50748,7 @@ lib.dynamicContentSlide {
 							</softref_key>
 						</keys>
 						<tokenizedContent>&lt;p&gt;There are more than 1,500 extensions available in the TYPO3 Extension Repository (TER) on TYPO3.org for you to browse and assess according to your needs. Download and install them directly with the TYPO3 backend Extension Manager. And TYPO3 is open source! You and your developers (or &lt;a href=&quot;{softref:efa395b5a8dac46505dabe973f44ea3f}&quot;&gt;your TYPO3 service provider&lt;/a&gt;) can also create new, custom extensions to meet your specialised needs.&lt;/p&gt;
-&lt;ul class=&quot;list-inline&quot;&gt; 	&lt;li&gt;&lt;a class=&quot;btn btn-secondary&quot; href=&quot;{softref:58cb31ff7881ff18f4e911d63bb0dfb4}&quot; target=&quot;_blank&quot;&gt;Packagist&lt;/a&gt;&lt;/li&gt; 	&lt;li&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;{softref:df63486e300c5cdda7e74771f3387aa3}&quot; target=&quot;_blank&quot;&gt;TYPO3 Extension Repository&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt;
-
-</tokenizedContent>
+&lt;ul class=&quot;list-inline&quot;&gt;&lt;li&gt;&lt;a class=&quot;btn btn-secondary&quot; href=&quot;{softref:58cb31ff7881ff18f4e911d63bb0dfb4}&quot;&gt;Packagist&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;btn btn-primary&quot; href=&quot;{softref:df63486e300c5cdda7e74771f3387aa3}&quot;&gt;TYPO3 Extension Repository&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</tokenizedContent>
 					</softrefs>
 				</field>
 				<field index="image" type="array">
