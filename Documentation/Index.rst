@@ -28,8 +28,7 @@ The Official TYPO3 Introduction Package
 
 ----
 
-This extension is a carefully crafted TYPO3
-:doc:`distribution <t3coreapi:ExtensionArchitecture/CreateNewDistribution/Index>`
+This extension is a carefully crafted TYPO3 :ref:`distribution <t3coreapi:distribution>`
 giving you a small insight in the powerful toolbox of the TYPO3 CMS framework.
 
 It comes with a full-fledged website based on Benjamin Kott's
