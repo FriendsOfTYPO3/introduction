@@ -1398,11 +1398,11 @@
 						<softref_element index="constants:url:12" type="array">
 							<field>constants</field>
 							<spKey>url</spKey>
-							<matchString>https://github.com/TYPO3/TYPO3.CMS</matchString>
+							<matchString>https://github.com/TYPO3/typo3</matchString>
 							<subst type="array">
 								<type>string</type>
 								<tokenID>9acad8fb6435ad4224ed723b8edb240e</tokenID>
-								<tokenValue>https://github.com/TYPO3/TYPO3.CMS</tokenValue>
+								<tokenValue>https://github.com/TYPO3/typo3</tokenValue>
 							</subst>
 						</softref_element>
 						<softref_element index="constants:url:17" type="array">
@@ -11635,7 +11635,7 @@ plugin.bootstrap_package.settings.scss.cookieconsent-bg = #F2F2F2
 plugin.bootstrap_package.settings.scss.footer-sections = (content:(background: #0288D1, color: #ffffff, link-color: #FFEB3B), meta:(background: #ffffff, color: $body-color, link-color: #0288D1))
 page.theme.socialmedia.channels.facebook.url = https://www.facebook.com/typo3/
 page.theme.socialmedia.channels.twitter.url = https://twitter.com/typo3
-page.theme.socialmedia.channels.github.url = https://github.com/TYPO3/TYPO3.CMS
+page.theme.socialmedia.channels.github.url = https://github.com/TYPO3/typo3
 page.theme.socialmedia.channels.youtube.url = https://www.youtube.com/user/typo3
 page.theme.cookieconsent.position = bottom-right
 page.preloader.backgroundColor = #03A9F4
@@ -11679,11 +11679,11 @@ page.preloader.logo.file = fileadmin/introduction/images/introduction-package-in
 									</subst>
 								</softref_element>
 								<softref_element index="12" type="array">
-									<matchString>https://github.com/TYPO3/TYPO3.CMS</matchString>
+									<matchString>https://github.com/TYPO3/typo3</matchString>
 									<subst type="array">
 										<type>string</type>
 										<tokenID>9acad8fb6435ad4224ed723b8edb240e</tokenID>
-										<tokenValue>https://github.com/TYPO3/TYPO3.CMS</tokenValue>
+										<tokenValue>https://github.com/TYPO3/typo3</tokenValue>
 									</subst>
 								</softref_element>
 								<softref_element index="17" type="array">
