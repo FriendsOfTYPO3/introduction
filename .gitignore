@@ -1,4 +1,5 @@
 /.build/*
+/.ddev/docker-compose.chrome.yaml
 /config/*
 /Documentation-GENERATED-temp/*
 /var/*

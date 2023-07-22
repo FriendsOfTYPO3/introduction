@@ -1,0 +1,22 @@
+---
+actor: AcceptanceTester
+modules:
+  enabled:
+    - Asserts
+    - WebDriver:
+        url: http://introduction.typo3.ddev.site
+        browser: chrome
+        host: ddev-introduction.typo3-chrome
+        wait: 1
+        window_size: 1280x1024
+        capabilities:
+          chromeOptions:
+            args:
+              - '--headless'
+              - '--disable-gpu'
+              - '--disable-dev-shm-usage'
+              - '--no-sandbox'
+step_decorators:
+  - Codeception\Step\ConditionalAssertion
+  - Codeception\Step\TryTo
+  - Codeception\Step\Retry

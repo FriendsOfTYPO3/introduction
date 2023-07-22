@@ -1,0 +1,60 @@
+#!/bin/bash
+
+## Description: Run all tests or a single test
+## Usage: run-tests [flags] [test]
+## Example: ddev run-tests\nddev run-tests Acceptance\nddev run-tests --skip-post-reset
+## Flags: [{"Name":"skip-pre-reset","Usage":"Skip reset before tests"},{"Name":"skip-post-reset","Usage":"Skip reset after tests"}]
+
+# Initialize local variables
+SKIP_PRE_RESET=""
+SKIP_POST_RESET=""
+TEST="tests"
+
+
+run_tests () {
+    if [ ! "${SKIP_PRE_RESET}" = "true" ] ; then
+        ddev exec codecept clean -n
+        ddev reset -f
+    fi
+
+    cp -f .ddev/docker-compose.chrome.yaml.template .ddev/docker-compose.chrome.yaml
+
+    ddev composer "${TEST}"
+
+    if [ ! "${SKIP_POST_RESET}" = "true" ] ; then
+        rm -f .ddev/docker-compose.chrome.yaml
+        ddev reset -f
+    fi
+}
+
+
+# Parse options and arguments
+while :; do
+    case ${1:-} in
+        --skip-pre-reset)
+            SKIP_PRE_RESET=true
+            ;;
+        --skip-post-reset)
+            SKIP_POST_RESET=true
+            ;;
+        --) # End of all options.
+            shift
+            break
+            ;;
+        -?*)
+            printf "WARNING: Unknown option (ignored): %s\n" "$1" >&2
+            ;;
+        ?*)  # Test argument.
+            TEST=${TEST}:${1}
+            shift
+            break
+            ;;
+        *)  # Default case: end of arguments.
+            break
+            ;;
+    esac
+
+    shift
+done
+
+run_tests
