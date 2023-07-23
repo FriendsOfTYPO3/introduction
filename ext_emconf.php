@@ -15,7 +15,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'The Official TYPO3 Introduction Package',
-    'description' => 'This package delivers a new website (page tree) and shows all out-of-the-box features of TYPO3, and includes a theme based on Twitter Bootstrap 3, and a style editor to customize the design. Sample backend groups are added',
+    'description' => 'This is the Official TYPO3 Introduction Package, a carefully crafted TYPO3 distribution giving you a small insight in the powerful toolbox of the TYPO3 CMS framework. It comes with a full-fledged website based on Benjamin Kott\'s Bootstrap Package and Twitter Bootstrap, with simple options to customize the base theme.',
     'category' => 'distribution',
     'version' => '4.6.1',
     'state' => 'stable',
