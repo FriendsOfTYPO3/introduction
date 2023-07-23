@@ -46,11 +46,25 @@ Reset the project
 
 .. warning::
 
-    This permanently removes all local changes and cannot be undone.
+    This permanently removes all local changes in the database and cannot be
+    undone.
 
 To reset the project to a clean state run `ddev reset` which will remove the
 database and the previously installed TYPO3 instance. All other files in the
 repository will stay untouched.
+
+
+Test the project
+~~~~~~~~~~~~~~~~
+
+.. warning::
+
+    This permanently removes all local changes in the database and cannot be
+    undone.
+
+To start the tests locally run `ddev run-tests` which will remove the database
+and the previously installed TYPO3 instance and sets up a fresh instance. For
+more information about the available options run `ddev run-tests --help`.
 
 
 Render the documentation
