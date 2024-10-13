@@ -53,4 +53,3 @@ and Twitter Bootstrap, with simple options to customize the base theme.
    :hidden:
 
    Sitemap
-   genindex
