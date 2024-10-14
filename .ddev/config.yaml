@@ -36,6 +36,7 @@ web_environment:
     - TYPO3_SETUP_ADMIN_EMAIL=admin@example.com
     - TYPO3_SETUP_ADMIN_PASSWORD=Password!1
     - TYPO3_PROJECT_NAME=TYPO3 Introduction Package
+    - TYPO3_SERVER_TYPE=other
 nodejs_version: "16"
 
 # Key features of ddev's config.yaml:
