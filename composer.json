@@ -19,7 +19,7 @@
 		"ext-pdo": "*",
 		"bk2k/bootstrap-package": "^15.0",
 		"typo3/cms-beuser": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-core": "^13.4@dev",
+		"typo3/cms-core": "^12.4 || ^13.4 || 13.*.*@dev",
 		"typo3/cms-extensionmanager": "^12.4 || ^13.4 || 13.*.*@dev",
 		"typo3/cms-felogin": "^12.4 || ^13.4 || 13.*.*@dev",
 		"typo3/cms-filemetadata": "^12.4 || ^13.4 || 13.*.*@dev",
