@@ -1,86 +1,86 @@
 {
-	"name": "typo3/cms-introduction",
-	"description": "The Official TYPO3 Introduction Package",
-	"license": "GPL-2.0-or-later",
-	"type": "typo3-cms-extension",
-	"keywords": [
-		"TYPO3 CMS",
-		"introduction",
-		"bootstrap"
-	],
-	"homepage": "https://extensions.typo3.org/extension/introduction",
-	"support": {
-		"issues": "https://github.com/FriendsOfTYPO3/introduction/issues",
-		"source": "https://github.com/FriendsOfTYPO3/introduction",
-		"docs": "https://docs.typo3.org/p/typo3/cms-introduction/main/en-us/"
-	},
-	"require": {
-		"php": "^8.1",
-		"ext-pdo": "*",
-		"bk2k/bootstrap-package": "^15.0",
-		"typo3/cms-beuser": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-core": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-extensionmanager": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-felogin": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-filemetadata": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-form": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-impexp": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-indexed-search": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-tstemplate": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/minimal": "^12.4 || ^13.4 || 13.*.*@dev"
-	},
-	"require-dev": {
-		"codeception/codeception": "^5.0",
-		"codeception/module-asserts": "^3.0",
-		"codeception/module-webdriver": "^4.0",
-		"ergebnis/composer-normalize": "^2.0",
-		"typo3/cms-belog": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-lowlevel": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-scheduler": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/cms-setup": "^12.4 || ^13.4 || 13.*.*@dev",
-		"typo3/coding-standards": "^0.8"
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"autoload": {
-		"psr-4": {
-			"TYPO3\\CMS\\Introduction\\": "Classes"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"TYPO3\\CMS\\Introduction\\Tests\\": "Tests"
-		}
-	},
-	"config": {
-		"allow-plugins": {
-			"ergebnis/composer-normalize": true,
-			"typo3/cms-composer-installers": true,
-			"typo3/class-alias-loader": true
-		},
-		"bin-dir": ".build/bin",
-		"optimize-autoloader": true,
-		"sort-packages": true,
-		"vendor-dir": ".build/vendor"
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-main": "4.7.x-dev"
-		},
-		"typo3/cms": {
-			"extension-key": "introduction",
-			"web-dir": ".build/public"
-		}
-	},
-	"scripts": {
-		"post-autoload-dump": [
-			"test -f config/system/settings.php || (typo3 setup --force -n && typo3 extension:setup)"
-		],
-		"tests": [
-			"@tests:acceptance"
-		],
-		"tests:acceptance": [
-			"@php codecept run -n Acceptance"
-		]
-	}
+    "name": "typo3/cms-introduction",
+    "description": "The Official TYPO3 Introduction Package",
+    "license": "GPL-2.0-or-later",
+    "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3 CMS",
+        "introduction",
+        "bootstrap"
+    ],
+    "homepage": "https://extensions.typo3.org/extension/introduction",
+    "support": {
+        "issues": "https://github.com/FriendsOfTYPO3/introduction/issues",
+        "source": "https://github.com/FriendsOfTYPO3/introduction",
+        "docs": "https://docs.typo3.org/p/typo3/cms-introduction/main/en-us/"
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-pdo": "*",
+        "bk2k/bootstrap-package": "^15.0",
+        "typo3/cms-beuser": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-core": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-extensionmanager": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-felogin": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-filemetadata": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-form": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-impexp": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-indexed-search": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-tstemplate": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/minimal": "^12.4 || ^13.4 || 13.*.*@dev"
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.0",
+        "codeception/module-asserts": "^3.0",
+        "codeception/module-webdriver": "^4.0",
+        "ergebnis/composer-normalize": "^2.0",
+        "typo3/cms-belog": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-lowlevel": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-scheduler": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/cms-setup": "^12.4 || ^13.4 || 13.*.*@dev",
+        "typo3/coding-standards": "^0.8"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "TYPO3\\CMS\\Introduction\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TYPO3\\CMS\\Introduction\\Tests\\": "Tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true
+        },
+        "bin-dir": ".build/bin",
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "vendor-dir": ".build/vendor"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "4.7.x-dev"
+        },
+        "typo3/cms": {
+            "extension-key": "introduction",
+            "web-dir": ".build/public"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "test -f config/system/settings.php || (typo3 setup --force -n && typo3 extension:setup)"
+        ],
+        "tests": [
+            "@tests:acceptance"
+        ],
+        "tests:acceptance": [
+            "@php codecept run -n Acceptance"
+        ]
+    }
 }
