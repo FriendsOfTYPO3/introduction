@@ -11,7 +11,7 @@ TYPO3 download based instance
 -----------------------------
 
 If you downloaded and unpacked a full TYPO3 core from `get.typo3.org <https://get.typo3.org>`_,
-just :ref:`install the system <t3install:install>` as usual. In the last
+just :ref:`install the system <t3start:legacyinstallation>` as usual. In the last
 installation step you can select the option *Yes, download the list of
 distributions*. On first backend login, you will be redirected to the extension
 manager "Get preconfigured distribution" and can install the "The Official
@@ -33,8 +33,9 @@ upon first installation.
 Composer based instance
 -----------------------
 
-If you base your TYPO3 instance on a modern Composer based installation, just
-require the package via Composer:
+If you base your TYPO3 instance on a modern
+:ref:`Composer based installation <t3start:install>`, just require the package
+via Composer:
 
 .. code-block:: bash
 
