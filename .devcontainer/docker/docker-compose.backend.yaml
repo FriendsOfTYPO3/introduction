@@ -1,0 +1,160 @@
+# https://www.rutschmann.biz/de-de/typo3-blog/detail/typo3-mit-solr-und-nginx-mittels-docker-compose-auf-auf-amazon-ec2#c542
+# https://medium.com/@tech_18484/deploying-a-php-web-app-with-docker-compose-nginx-and-mariadb-d61a84239c0d
+# https://blog.hdnet.de/blog/setting-up-typo3-9-locally
+services:
+  nginx:
+    build:
+      context: ${WORKSPACE_ROOT}/.devcontainer/docker/nginx/.
+      args:
+        DEVCONTAINER_SERVICE_NAME:
+        DEVCONTAINER_SERVICE_ID:
+        WORKSPACE_ROOT:
+    #entrypoint: /bin/sh -c "while true; do sleep 1; done"
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: false
+      mariadb:
+        condition: service_healthy
+        required: false
+      postgres:
+        condition: service_healthy
+        required: false
+      #php:
+      #  condition: service_started
+      #  required: true
+      #- solr
+    restart: unless-stopped
+    ports:
+      - '80:80'
+    volumes:
+      - ${WORKSPACE_ROOT}:${WORKSPACE_ROOT}:rw,cached
+      #- /etc/letsencrypt/live/:/etc/letsencrypt/live
+      #- /etc/letsencrypt/archive:/etc/letsencrypt/archive
+      #- /etc/ssl/:/etc/ssl
+      - ${WORKSPACE_ROOT}/.devcontainer/docker/nginx/templates:/etc/nginx/templates:rw,cached
+      - ${WORKSPACE_ROOT}/.devcontainer/docker/nginx/includes:/etc/nginx/includes:ro,cached
+    networks:
+      - devcontainer
+    labels:
+      dev.containers.servicetype: "webserver"
+    profiles: [php-fpm, nginx]
+  mysql:
+    build:
+      context: ..
+      dockerfile: ${WORKSPACE_ROOT}/.devcontainer/docker/db/mysql/Dockerfile
+    command: mysqld
+    restart: unless-stopped
+    volumes:
+      #- db-data:/var/lib/mysql
+      #- type: bind
+      #  source: ${WORKSPACE_ROOT}/.devcontainer/docker/db/mysql/custom.cnf
+      #  target: /etc/mysql/conf.d/custom.cnf
+      - type: bind
+        source: ${WORKSPACE_ROOT}/.devcontainer/docker/db/initdb
+        target: /docker-entrypoint-initdb.d
+    networks:
+      - devcontainer
+    profiles: [mysql]
+    ports:
+      - 3306:3306
+    env_file:
+      - path: ${WORKSPACE_ROOT}/.devcontainer/.env
+        required: "true"
+      - path: ${WORKSPACE_ROOT}/.devcontainer/docker/db/mysql/.env
+        required: "true"
+    healthcheck:
+      test: mysql -h${TYPO3_INSTALL_DB_HOST} --port=${DB_SERVER_PORT} -uroot -p$${MYSQL_ROOT_PASSWORD} --execute="SHOW DATABASES;" || exit 1
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+      start_interval: 10s
+    labels:
+      dev.containers.servicetype: "database"
+  mariadb:
+    image: mariadb:12-ubi
+    command: mariadbd
+    restart: unless-stopped
+    volumes:
+      #- type: bind
+      #  source: ${WORKSPACE_ROOT}/.devcontainer/docker/db/mariadb/custom.cnf
+      #  target: /etc/my.cnf.d/custom.cnf
+      - type: bind
+        source: ${WORKSPACE_ROOT}/.devcontainer/docker/db/initdb
+        target: /docker-entrypoint-initdb.d
+    networks:
+      - devcontainer
+    profiles: [mariadb]
+    ports:
+      - 3306:3306
+    env_file:
+      - path: ${WORKSPACE_ROOT}/.devcontainer/.env
+        required: "true"
+      - path: ${WORKSPACE_ROOT}/.devcontainer/docker/db/mariadb/.env
+        required: "true"
+    healthcheck:
+      test: mysql -h${TYPO3_INSTALL_DB_HOST} --port=${DB_SERVER_PORT} -uroot -p$${MARIADB_ROOT_PASSWORD} --execute="SHOW DATABASES;" || exit 1
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+      start_interval: 10s
+    labels:
+      dev.containers.servicetype: "database"
+  postgres:
+    image: postgres:18-trixie
+    command: postgres
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: ${WORKSPACE_ROOT}/.devcontainer/docker/db/postgres/initdb
+        target: /docker-entrypoint-initdb.d
+    networks:
+      - devcontainer
+    profiles: [postgresql]
+    ports:
+      - 5432:5432
+    env_file:
+      - path: ${WORKSPACE_ROOT}/.devcontainer/.env
+        required: "true"
+      - path: ${WORKSPACE_ROOT}/.devcontainer/docker/db/postgres/.env
+        required: "true"
+    healthcheck:
+      test: psql --dbname=$${POSTGRES_DB} -h ${TYPO3_INSTALL_DB_HOST} --port=${DB_SERVER_PORT} -U $${POSTGRES_USER} --command '\dt' || exit 1
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+      start_interval: 10s
+    labels:
+      dev.containers.servicetype: "database"
+  adminer:
+    image: adminer:latest
+    restart: unless-stopped
+    environment:
+      TZ: "Europe/Berlin"
+    networks:
+      - devcontainer
+    profiles: [mysql, mariadb, postgresql]
+    ports:
+      - 8080:8080
+    depends_on:
+      mysql:
+        condition: service_healthy
+        required: false
+      mariadb:
+        condition: service_healthy
+        required: false
+      postgres:
+        condition: service_healthy
+        required: false
+    labels:
+      dev.containers.servicetype: "database-client"
+networks:
+  devcontainer:
+    # Specify driver options
+    driver: bridge
+    enable_ipv6: false
+    driver_opts:
+      com.docker.network.bridge.host_binding_ipv4: "127.0.0.1"

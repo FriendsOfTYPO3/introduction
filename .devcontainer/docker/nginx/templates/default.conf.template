@@ -1,0 +1,47 @@
+map $http_accept $webp_suffix {
+    default   "";
+    "~*webp"  ".webp";
+}
+
+#https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Security/GuidelinesAdministrators/ContentSecurityPolicy.html
+map $request_uri $csp_header {
+    ~^/fileadmin/ "default-src 'self'; script-src 'none'; style-src 'none'; object-src 'none'; require-trusted-types-for 'script';";
+}
+
+# /index.php is used for TYPO3 v14+
+# /typo3/index.php is used for TYPO3 pre-v14
+map $typo3_index_exists $typo3_index {
+    default   "/index.php";
+    1         "/typo3/index.php";
+}
+
+#error_log  ${WORKSPACE_ROOT}/var/log/nginx_error.log debug;
+error_log /dev/stdout debug;
+#access_log ${WORKSPACE_ROOT}/var/log/nginx_access.log combined;
+#access_log ${WORKSPACE_ROOT}/var/log/nginx_access.log;
+
+
+server {
+    listen 80 default_server;
+    root ${WORKSPACE_ROOT}/.build/public;
+    index index.php index.htm index.html;
+
+    location = /robots.txt { access_log off; log_not_found off; }
+
+    client_max_body_size 100m;
+
+    location /.well-known/acme-challenge/ {
+        try_files $uri =404;
+    }
+
+    location ~ /.ht {
+        deny all;
+    }
+
+    error_log  ${WORKSPACE_ROOT}/var/log/nginx_error.typo3.log debug;
+    access_log ${WORKSPACE_ROOT}/var/log/nginx_access.typo3.log combined;
+
+    include '/etc/nginx/includes/cache-header.conf';
+    include '/etc/nginx/includes/compression.conf';
+    include '/etc/nginx/includes/typo3.conf';
+}

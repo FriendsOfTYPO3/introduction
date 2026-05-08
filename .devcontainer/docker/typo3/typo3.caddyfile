@@ -1,0 +1,79 @@
+{
+    debug
+    admin off
+    auto_https off
+
+	# https://caddyserver.com/docs/caddyfile/directives#sorting-algorithm
+	order php_server before file_server
+	order php before file_server
+}
+
+127.0.0.1:80, localhost:80 {
+	root * {$WORKSPACE_ROOT}/.build/public
+
+	php_server {
+		root {$WORKSPACE_ROOT}/.build/public
+	}
+
+	@canonicalPath {
+		file {path}/index.php
+		not path */
+	}
+	redir @canonicalPath {path}/ 308
+
+	# TYPO3 paths for content security policy
+	@fileadmin {
+		path /fileadmin/*
+	}
+	header @fileadmin ?Content-Security-Policy "default-src 'self'; script-src 'none'; style-src 'none'; object-src 'none'; require-trusted-types-for 'script';"
+
+	# TYPO3 Frontend
+	@frontend {
+		not path /typo3/*
+		file {
+			try_files {path} {path}/index.php /index.php
+			split_path .php
+		}
+	}
+	rewrite @frontend {http.matchers.file.relative}
+	request_header @frontend +TYPO3_FRANKENPHP_MODE frontend
+
+	# TYPO3 Backend - if not set, backend routing will not work!
+	@backend {
+		path /typo3/*
+		not path /typo3/install.php
+		file {
+			try_files {path} {path}/index.php /typo3/index.php /index.php
+			split_path .php
+		}
+	}
+	rewrite @backend {http.matchers.file.relative}
+	request_header @backend +TYPO3_FRANKENPHP_MODE backend
+
+	encode zstd gzip
+
+	handle @backend {
+	    php_server
+	#	#redir @backend /phpinfo.php
+	}
+
+	handle @frontend {
+		php_server {
+			#worker index.php 1
+		}
+	}
+
+    log {
+        level debug
+        # Redact the authorization query parameter that can be set by Mercure
+        format filter {
+            wrap console
+            fields {
+                uri query {
+                    replace authorization REDACTED
+                }
+            }
+        }
+    }
+	log_append HTTP_TYPO3_FRANKENPHP_MODE {http.request.header.TYPO3_FRANKENPHP_MODE}
+}
