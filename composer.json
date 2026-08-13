@@ -1,6 +1,6 @@
 {
     "name": "typo3/cms-introduction",
-    "description": "The Official TYPO3 Introduction Package",
+    "description": "The Official TYPO3 Introduction Package - This is the Official TYPO3 Introduction Package, a carefully crafted TYPO3 distribution giving you a small insight in the powerful toolbox of the TYPO3 CMS framework.",
     "license": "GPL-2.0-or-later",
     "type": "typo3-cms-extension",
     "keywords": [
@@ -15,30 +15,30 @@
         "docs": "https://docs.typo3.org/p/typo3/cms-introduction/main/en-us/"
     },
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "ext-pdo": "*",
-        "bk2k/bootstrap-package": "^15.0",
-        "typo3/cms-beuser": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-core": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-extensionmanager": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-felogin": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-filemetadata": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-form": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-impexp": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-indexed-search": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-tstemplate": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/minimal": "^12.4 || ^13.4 || 13.*.*@dev"
+        "bk2k/bootstrap-package": "^16.0",
+        "typo3/cms-beuser": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-core": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-extensionmanager": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-felogin": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-filemetadata": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-form": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-impexp": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-indexed-search": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-tstemplate": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/minimal": "^13.4 || ^14.0 || 14.*.*@dev"
     },
     "require-dev": {
         "codeception/codeception": "^5.0",
         "codeception/module-asserts": "^3.0",
         "codeception/module-webdriver": "^4.0",
         "ergebnis/composer-normalize": "^2.0",
-        "typo3/cms-belog": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-lowlevel": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-scheduler": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/cms-setup": "^12.4 || ^13.4 || 13.*.*@dev",
-        "typo3/coding-standards": "^0.8"
+        "typo3/cms-belog": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-lowlevel": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-scheduler": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/cms-setup": "^13.4 || ^14.0 || 14.*.*@dev",
+        "typo3/coding-standards": "^0.9"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -65,7 +65,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "4.7.x-dev"
+            "dev-main": "5.0.x-dev"
         },
         "typo3/cms": {
             "extension-key": "introduction",
