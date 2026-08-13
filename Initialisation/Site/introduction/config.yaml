@@ -1,4 +1,8 @@
 base: /
+dependencies:
+  - bootstrap-package/full
+  - bootstrap-package/indexed-search
+  - typo3/indexed-search
 languages:
   -
     title: English

@@ -1,3 +1,32 @@
+# 5.0.0 (unreleased)
+
+## BREAKING
+
+- [!!!][TASK] Drop support for TYPO3 12.4, add support for TYPO3 14.0 (requires PHP ^8.2)
+- [!!!][TASK] Require bk2k/bootstrap-package:^16.0, which replaces the monolithic
+  TypoScript include with Site Sets; the shipped site configuration now depends
+  on the `bootstrap-package/full` set instead of `EXT:bootstrap_package/Configuration/TypoScript`
+
+## TASK
+
+- [TASK] Migrate error handling event listener from the removed
+  `AfterExtensionSiteFilesHaveBeenImportedEvent` to the new `PackageInitializationEvent`
+- [TASK] Update export
+- [TASK] Update dependencies
+
+## KNOWN ISSUES
+
+- Search results are broken on TYPO3 13.4/14.x: `bk2k/bootstrap-package`
+  16.0.0 still ships `Resources/Private/Templates/IndexedSearch/Search/Search.html`
+  using the `<is:pageBrowsingResults>` ViewHelper, which was removed from
+  EXT:indexed_search in TYPO3 13.0 (Breaking #102945/#102925). Any search
+  returning at least one result throws a Fluid parse error; an empty
+  search still renders fine. This is an upstream bug in bootstrap_package
+  (present on its `master` branch too, not yet fixed in a release) and
+  needs to be reported/fixed there, or worked around locally with a
+  template override, before this distribution's search is usable end
+  to end on v13.4/v14.
+
 # 4.7.0
 
 ## FEATURE

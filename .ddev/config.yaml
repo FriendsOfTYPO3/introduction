@@ -1,7 +1,7 @@
 name: introduction.typo3
 type: typo3
 docroot: .build/public
-php_version: "8.2"
+php_version: "8.5"
 webserver_type: nginx-fpm
 router_http_port: "80"
 router_https_port: "443"
@@ -11,7 +11,7 @@ additional_hostnames:
 additional_fqdns: []
 database:
     type: mariadb
-    version: "10.6"
+    version: "10.11"
 nfs_mount_enabled: false
 mutagen_enabled: false
 hooks:
@@ -37,7 +37,7 @@ web_environment:
     - TYPO3_SETUP_ADMIN_PASSWORD=Password!1
     - TYPO3_PROJECT_NAME=TYPO3 Introduction Package
     - TYPO3_SERVER_TYPE=other
-nodejs_version: "16"
+nodejs_version: "22"
 
 # Key features of ddev's config.yaml:
 

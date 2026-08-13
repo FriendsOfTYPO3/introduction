@@ -11581,7 +11581,7 @@
 				<field index="tx_impexp_origuid" type="integer">2</field>
 				<field index="title">Introduction Package</field>
 				<field index="root" type="integer">1</field>
-				<field index="clear" type="integer">3</field>
+				<field index="clear" type="integer">0</field>
 				<field index="constants">[tree.level === 0]
 page.theme.navigation.style = default-transition
 [end]
@@ -11596,11 +11596,11 @@ page.theme.socialmedia.channels.github.url = https://github.com/TYPO3/typo3
 page.theme.socialmedia.channels.youtube.url = https://www.youtube.com/user/typo3
 page.theme.cookieconsent.position = bottom-right
 </field>
-				<field index="include_static_file">EXT:bootstrap_package/Configuration/TypoScript</field>
+				<field index="include_static_file"></field>
 				<field index="basedOn"></field>
 				<field index="includeStaticAfterBasedOn" type="integer">0</field>
 				<field index="config"></field>
-				<field index="static_file_mode" type="integer">3</field>
+				<field index="static_file_mode" type="integer">0</field>
 			</fieldlist>
 			<related index="rels" type="array">
 				<field index="constants" type="array">
@@ -25893,7 +25893,7 @@ page.theme.cookieconsent.position = bottom-right
 				<field index="background_image" type="integer">0</field>
 				<field index="background_image_options" type="NULL"></field>
 				<field index="subitems_header_layout" type="integer">2</field>
-				<field index="CType">list</field>
+				<field index="CType">indexedsearch_pi2</field>
 				<field index="categories" type="integer">0</field>
 				<field index="layout" type="integer">0</field>
 				<field index="space_before_class"></field>
@@ -25915,7 +25915,7 @@ page.theme.cookieconsent.position = bottom-right
 				<field index="imagecols" type="integer">2</field>
 				<field index="pages"></field>
 				<field index="recursive" type="integer">0</field>
-				<field index="list_type">indexedsearch_pi2</field>
+				<field index="list_type"></field>
 				<field index="media" type="integer">0</field>
 				<field index="records"></field>
 				<field index="sectionIndex" type="integer">1</field>
