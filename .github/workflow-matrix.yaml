@@ -1,0 +1,12 @@
+- phpVersion: "8.5"
+  database: mysql
+  webserver: apache
+- phpVersion: "8.4"
+  database: mariadb
+  webserver: frankenphp
+- phpVersion: "8.3"
+  database: postgresql
+  webserver: nginx
+- phpVersion: "8.2"
+  database: sqlite
+  webserver: frankenphp
